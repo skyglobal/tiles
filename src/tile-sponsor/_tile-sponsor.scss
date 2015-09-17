@@ -1,4 +1,7 @@
+@import 'globals/mixins';
 @import 'globals/responsive';
+
+@import 'brand-specific-sponsors';
 
 .tile-sponsor {
   position: absolute;
@@ -36,5 +39,18 @@
       @include sponsor-sizing($min: 30, $max: 40, $type: $mobile);
       width: auto;
     }
+  }
+}
+
+.sponsor-label {
+  font-family: $skytext-reg;
+  color: $white;
+  vertical-align: middle;
+  padding-right: .75em;
+  font-size: 14px;
+  @include transition(color $short-transition ease);
+
+  .tile-sponsor:hover & {
+    text-decoration: underline;
   }
 }

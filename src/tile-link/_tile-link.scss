@@ -41,5 +41,11 @@
       bottom: 0;
       padding-bottom: 43.75%;
     }
+
+    .tile-title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 }

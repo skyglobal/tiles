@@ -3,7 +3,7 @@
 @import 'globals/constants';
 @import 'globals/responsive';
 
-@import 'tile-sponsor';
+@import '../tile-sponsor/tile-sponsor';
 
 .tile.type-content {
   &:hover,
@@ -115,10 +115,6 @@
       min-height: 22px;
       height: 12.5%;
     }
-  }
-
-  .tile-uuid-notice {
-    display: none;
   }
 
   .tile-content {

@@ -14,15 +14,11 @@ body {
   background: #EEE;
 }
 
-.tile {
-  float: left;
-  width: 45%;
-  margin-right: 2vw;
-  margin-bottom: 2vw;
+.version {
+  font-size: 1.5rem;
+  color: #AAA;
 }
 
-.container {
-  position: relative;
-  width: 1140px;
-  margin: 0 auto;
+.tile {
+  margin-bottom: 5vw;
 }

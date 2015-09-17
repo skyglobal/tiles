@@ -3,148 +3,160 @@
 <html>
   <head>
     <title>Polaris Tile Demo Page</title>
-    <link rel="stylesheet" href="//web-toolkit.global.sky.com/components/core/0.0.4/styles/core.min.css" />
-    <link rel="stylesheet" href="//web-toolkit.global.sky.com/components/skycons/0.3.5/styles/skycons-core.min.css" />
+    <link rel="stylesheet" href="//web-toolkit.global.sky.com/2.3.7/stylesheets/toolkit.css"/>
+    <link rel="stylesheet" href="//web-toolkit.global.sky.com/2.3.7/fonts/skycons.min.css"/>
     <link rel="stylesheet" type="text/css" href="styles/demo.css" />
     <link rel="stylesheet" type="text/css" href="styles/tile.css" />
   </head>
 
-  <body>
-    <div class="container">
-      <h1>Polaris Tile</h1>
+  <body class="skycom-container">
+    <h1>Polaris Tiles <span class="version">(0.0.1)</span></h1>
 
-      <h2>Link Tiles</h2>
-      <section class="link-tiles">
-        <h3>With background</h3>
-        <div class="tile medium type-link theme-text-with-background in-view">
-          <div class="tile-inner">
-            <a class="tile-link" href="http://www.sky.com/shop/tv/catch-up-tv">
-              <div class="tile-media">
-                <img class="tile-media-bg" src="images/catch-up-tv.jpg" alt="" />
-              </div>
-              <div class="tile-content">
-                <div class="tile-content-inner valign-middle-wrapper">
-                  <h2 class="tile-title valign-middle-element"><b>Catch up TV</b> services are part of your package. Find out more.</h2>
-                </div>
-              </div>
-            </a>
-          </div>
-          <section>
-            <div class="shine top"></div>
-            <div class="shine bottom"></div>
-          </section>
-        </div>
-
-        <h3>Without background</h3>
-        <div class="tile medium type-link theme-light in-view">
-          <div class="tile-inner">
-            <a class="tile-link" href="http://www.skymovies.com">
-              <div class="tile-media">
-                <img class="tile-media-bg" src="images/sky-movies-promo.jpg" alt="">
-              </div>
-              <div class="tile-content">
-                <div class="tile-content-inner valign-middle-wrapper">
-                  <h2 class="tile-title valign-middle-element">Go to <b>skymovies.com</b> for news, reviews and all 1000 movies</h2>
-                </div>
-              </div>
-            </a>
-          </div>
-          <section>
-            <div class="shine top"></div>
-            <div class="shine bottom"></div>
-          </section>
-        </div>
-
-      </section>
-
-      <h2>Content Tiles</h2>
-      <section class="content-tiles">
-        <div class="tile medium type-content sky-1 in-view">
-          <div class="tile-inner">
-            <div>
-              <a class="tile-link" href="/watch/you-me-and-the-apocalypse/">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="https://dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
-                  <img class="tile-media-logo-channel" src="images/sky-1_on_dark.png" alt="sky-1">
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h2 class="tile-title">You, Me And The Apocalypse</h2>
-                  </div>
-                </div>
-                <span class="access-hide">- click to open detail panel</span>
-              </a>
-              <div class="tile-sponsor">
-                <a class="sponsor-link" href="http://www.jaguar.co.uk/jaguar-range/xe" target="_blank">
-                  <span class="sponsor-label">Sponsored by</span>
-                  <img class="sponsor-image tile-logo-sponsor" src="images/jaguar.png" alt="jaguar">
-                </a>
+    <h2>Link Tiles</h2>
+    <section class="clearfix">
+      <div class="tile medium type-link theme-text-with-background in-view skycom-6">
+        <div class="tile-inner">
+          <a class="tile-link" href="#">
+            <div class="tile-media">
+              <img class="tile-media-bg" src="images/catch-up-tv.jpg" alt="" />
+            </div>
+            <div class="tile-content">
+              <div class="tile-content-inner">
+                <h2 class="tile-title">With background</h2>
               </div>
             </div>
-          </div>
-          <section>
-            <div class="shine top"></div>
-            <div class="shine bottom"></div>
-          </section>
+          </a>
         </div>
+        <section>
+          <div class="shine top"></div>
+          <div class="shine bottom"></div>
+        </section>
+      </div>
 
-        <div class="tile medium type-content sky-living in-view">
-          <div class="tile-inner">
-            <div>
-              <a class="tile-link" href="/watch/you-me-and-the-apocalypse/">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="https://dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
-                  <img class="tile-media-logo-channel" src="images/sky-living_on_dark.png" alt="sky-1">
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h2 class="tile-title">You, Me And The Apocalypse</h2>
-                  </div>
-                </div>
-                <span class="access-hide">- click to open detail panel</span>
-              </a>
-              <div class="tile-sponsor">
-                <a class="sponsor-link" href="http://www.jaguar.co.uk/jaguar-range/xe" target="_blank">
-                  <span class="sponsor-label">Sponsored by</span>
-                  <img class="sponsor-image tile-logo-sponsor" src="images/jaguar.png" alt="jaguar">
-                </a>
+      <div class="tile medium type-link theme-light in-view skycom-6">
+        <div class="tile-inner">
+          <a class="tile-link" href="#">
+            <div class="tile-media">
+              <img class="tile-media-bg" src="images/sky-movies-promo.jpg" alt="">
+            </div>
+            <div class="tile-content">
+              <div class="tile-content-inner">
+                <h2 class="tile-title">Without background</h2>
               </div>
             </div>
-          </div>
-          <section>
-            <div class="shine top"></div>
-            <div class="shine bottom"></div>
-          </section>
+          </a>
         </div>
-      </section>
+        <section>
+          <div class="shine top"></div>
+          <div class="shine bottom"></div>
+        </section>
+      </div>
 
-      <h2>Account Tiles</h2>
-      <section class="account-tiles">
-        <div class="tile small type-account in-view">
-          <div class="tile-inner">
-            <a class="tile-link" href="//sky.com/mysky">
-              <div class="tile-content">
-                <div class="tile-content-inner">
-                  <h2 class="tile-title">Welcome Back</h2>
-                  <h3 class="tile-details">manage your account and discover all you can get as a Sky customer</h3>
-                </div>
+    </section>
+
+    <h2>Content Tiles</h2>
+    <section class="clearfix">
+      <div class="tile small type-content sky-1 in-view skycom-4">
+        <div class="tile-inner">
+          <a class="tile-link" href="#">
+            <div class="tile-bg">
+              <div class="tile-bg-default"></div>
+              <div class="tile-bg-active"></div>
+            </div>
+            <div class="tile-media">
+              <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
+              <img class="tile-media-logo-channel" src="images/sky-1_on_dark.png" alt="sky-1">
+            </div>
+            <div class="tile-content">
+              <div class="tile-content-inner">
+                <h2 class="tile-title">Sky 1, with sponsor</h2>
               </div>
+            </div>
+            <span class="access-hide">- click to open detail panel</span>
+          </a>
+          <div class="tile-sponsor">
+            <a class="sponsor-link" href="http://www.jaguar.co.uk/jaguar-range/xe" target="_blank">
+              <span class="sponsor-label">Sponsored by</span>
+              <img class="sponsor-image tile-logo-sponsor" src="images/jaguar.png" alt="jaguar">
             </a>
           </div>
-          <section>
-            <div class="shine top"></div>
-            <div class="shine bottom"></div>
-          </section>
         </div>
-      </section>
+        <section>
+          <div class="shine top"></div>
+          <div class="shine bottom"></div>
+        </section>
+      </div>
+
+      <div class="tile small type-content sky-arts in-view skycom-4">
+        <div class="tile-inner">
+          <a class="tile-link" href="#">
+            <div class="tile-bg">
+              <div class="tile-bg-default"></div>
+              <div class="tile-bg-active"></div>
+            </div>
+            <div class="tile-media">
+              <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/the-hot-ticket-saul-16x9-1-acd1146.jpg" alt="">
+              <img class="tile-media-logo-channel" src="images/sky-arts_on_dark.png" alt="sky-1">
+            </div>
+            <div class="tile-content">
+              <div class="tile-content-inner">
+                <h2 class="tile-title">Sky Arts, without sponsor</h2>
+              </div>
+            </div>
+            <span class="access-hide">- click to open detail panel</span>
+          </a>
+        </div>
+        <section>
+          <div class="shine top"></div>
+          <div class="shine bottom"></div>
+        </section>
+      </div>
+
+      <div class="tile small type-content sky-movies in-view skycom-4">
+        <div class="tile-inner">
+          <a class="tile-link" href="#">
+            <div class="tile-bg">
+              <div class="tile-bg-default"></div>
+              <div class="tile-bg-active"></div>
+            </div>
+            <div class="tile-media">
+              <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/the-theory-of-everything-key-art-16x9-61f2a5d.jpg" alt="">
+              <img class="tile-media-logo-channel" src="images/sky-movies_on_dark.png" alt="sky-1">
+            </div>
+            <div class="tile-content">
+              <div class="tile-content-inner">
+                <h2 class="tile-title">Sky Movies</h2>
+              </div>
+            </div>
+            <span class="access-hide">- click to open detail panel</span>
+          </a>
+        </div>
+        <section>
+          <div class="shine top"></div>
+          <div class="shine bottom"></div>
+        </section>
+      </div>
+    </section>
+
+    <h2>Account Tiles</h2>
+    <section class="clearfix">
+      <div class="tile small type-account in-view skycom-4">
+        <div class="tile-inner">
+          <a class="tile-link" href="#">
+            <div class="tile-content">
+              <div class="tile-content-inner">
+                <h2 class="tile-title">Welcome Back</h2>
+                <h3 class="tile-details">manage your account and discover all you can get as a Sky customer</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <section>
+          <div class="shine top"></div>
+          <div class="shine bottom"></div>
+        </section>
+      </div>
+    </section>
 
   </body>
 
