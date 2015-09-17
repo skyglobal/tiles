@@ -1,0 +1,19 @@
+@mixin font($font) {
+  font-family: $font;
+  font-weight: normal;
+}
+
+@mixin gpu {
+  @include transform(translate3d(0, 0, 0));
+}
+
+//To replace bourbon linear-gradient as the webpack sass-loader doesn't import it correcly.
+@mixin linear-gradient($direction, $start, $end) {
+  background-image: linear-gradient(to $direction, $start, $end);
+}
+
+@mixin sponsor-sizing($max, $min: 0, $type: $desktop) {
+  min-height: $min * 1px;
+  max-height: $max * 1px;
+  height: ($max / $type) * 100vw;
+}

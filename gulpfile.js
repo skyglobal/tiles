@@ -3,13 +3,15 @@ var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 
 gulp.task('sass', function () {
-  gulp.src('./src/**/*.scss')
-    .pipe(sass.sync().on('error', sass.logError))
+  gulp.src('./src/*.scss')
+    .pipe(sass({
+      includePaths: require('node-bourbon').includePaths
+    }).on('error', sass.logError))
     .pipe(gulp.dest('./demo/styles'));
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./src/**/*.scss', ['sass']);
+  gulp.watch('./src/*.scss', ['sass']);
 });
 
 gulp.task('connect', function() {
@@ -21,5 +23,6 @@ gulp.task('connect', function() {
 
 gulp.task('default', [
   'connect',
+  'sass',
   'sass:watch'
 ]);

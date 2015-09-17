@@ -1,0 +1,40 @@
+@import 'globals/responsive';
+
+.tile-sponsor {
+  position: absolute;
+
+  .small & {
+    bottom: 1vw;
+  }
+
+  .medium & {
+    bottom: 1.25vw;
+  }
+
+  .small &,
+  .medium & {
+    right: 1.5vw;
+
+    @include tablet {
+      bottom: 1.25vw;
+    }
+
+    @include mobile {
+      right: 3vw;
+      bottom: 2.5vw;
+    }
+  }
+}
+
+.tile-logo-sponsor {
+  @include sponsor-sizing($min: 30, $max: 60);
+  vertical-align: middle;
+  width: auto;
+
+  .tile-sponsor & {
+    @include mobile {
+      @include sponsor-sizing($min: 30, $max: 40, $type: $mobile);
+      width: auto;
+    }
+  }
+}

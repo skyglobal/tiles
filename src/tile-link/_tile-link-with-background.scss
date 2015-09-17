@@ -1,0 +1,22 @@
+@import '../node_modules/gradients/src/styles/gradients';
+@import 'globals/colours';
+@import 'globals/mixins';
+@import 'globals/responsive';
+
+.tile.theme-text-with-background,
+.tile.theme-channel {
+
+  .tile-media {
+    padding-bottom: 56.25%;
+  }
+
+  .tile-content {
+    padding-bottom: 43.75%;
+    @extend .polaris-bg-default;
+  }
+
+  .tile-title,
+  .tile-link:hover .tile-title {
+    color: $dark-grey;
+  }
+}

@@ -1,0 +1,20 @@
+$white: rgba(255, 255, 255, 1);
+$light-grey: rgba(233, 233, 233, 1);
+$mid-grey: #666;
+$dark-grey: rgba(34, 34, 34, 1);
+$black: rgba(0, 0, 0, 1);
+
+$access-blue: #255094;
+$sky-blue: #0072c9;
+
+@function white($alpha) {
+  @return rgba($white, ($alpha / 100));
+}
+
+@function light-grey($alpha) {
+  @return rgba($light-grey, ($alpha / 100));
+}
+
+@function black($alpha) {
+  @return rgba($black, ($alpha / 100));
+}

@@ -1,0 +1,45 @@
+@import '../globals/colours';
+
+.tile.type-link {
+
+  .tile-media {
+    padding-bottom: 100%;
+  }
+
+  &.small,
+  &.medium {
+    .tile-content-inner {
+      bottom: auto;
+    }
+  }
+
+  &.theme-light .tile-title {
+    color: $black;
+  }
+
+  &.theme-dark .tile-title {
+    color: $white;
+  }
+
+  &.theme-light,
+  &.theme-dark {
+    .tile-content-inner {
+      bottom: 0;
+    }
+
+    &.small .tile-content-inner {
+      top: 1vw;
+    }
+
+    &.medium .tile-content-inner {
+      top: 1.25vw;
+    }
+
+    .tile-content {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding-bottom: 43.75%;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import '../node_modules/gradients/src/styles/gradients';
+@import 'globals/colours';
+@import 'globals/constants';
+@import 'globals/responsive';
+
+@import 'tile-sponsor';
+
+.tile.type-content {
+  &:hover,
+  &:focus,
+  &.has-focus {
+    .tile-inner .tile-bg-active {
+      opacity: 1;
+    }
+
+    .tile-title {
+      color: $white;
+    }
+
+    .tile-sponsor span {
+      color: $white;
+    }
+  }
+
+  &.sky-atlantic .tile-bg-active {
+    @extend .polaris-bg-sky-atlantic;
+  }
+
+  &.sky-living .tile-bg-active {
+    @extend .polaris-bg-sky-living;
+  }
+
+  &.sky-sports .tile-bg-active {
+    @extend .polaris-bg-sky-sports;
+  }
+
+  &.sky-movies .tile-bg-active {
+    @extend .polaris-bg-sky-movies;
+  }
+
+  &.sky-arts .tile-bg-active {
+    @extend .polaris-bg-sky-arts;
+  }
+
+  &.sky-news .tile-bg-active {
+    @extend .polaris-bg-sky-news;
+  }
+
+  &.sky-1 .tile-bg-active {
+    @extend .polaris-bg-sky-1;
+  }
+
+  &.sky-box-sets .tile-bg-active {
+    @extend .polaris-bg-sky-box-sets;
+  }
+
+  .tile-bg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    > div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-size: 100% 150%;
+    }
+  }
+
+  @include tablet {
+    &.small,
+    &.medium {
+      .tile-media-logo-channel {
+        left: 1.5vw;
+        bottom: 1.5vw;
+      }
+    }
+  }
+
+  @include mobile {
+    &.small,
+    &.medium {
+      .tile-media-logo-channel {
+        left: 3vw;
+        bottom: 3vw;
+      }
+    }
+  }
+
+  .tile-bg-default {
+    @extend .polaris-bg-default;
+  }
+
+  .tile-bg-active {
+    @include transition(opacity $med-transition ease);
+  }
+
+  .tile-media {
+    padding-bottom: 56.25%;
+  }
+
+  .tile-media-logo-channel {
+    position: absolute;
+    left: 1.5vw;
+    bottom: 1.5vw;
+    height: 20px;
+    width: auto;
+
+    &[src*=sky-box-sets] {
+      max-height: 30px;
+      min-height: 22px;
+      height: 12.5%;
+    }
+  }
+
+  .tile-uuid-notice {
+    display: none;
+  }
+
+  .tile-content {
+    padding-bottom: 43.75%;
+  }
+
+  .tile-title {
+    margin-bottom: .25em;
+    @include transition(color $short-transition ease);
+  }
+
+  .tile-details {
+    @include transition(color $short-transition ease);
+  }
+}
