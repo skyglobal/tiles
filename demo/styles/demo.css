@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: #EEE;
+  background: #F0F0F0;
 }
 
 .version {
@@ -19,6 +19,59 @@ body {
   color: #AAA;
 }
 
+.installation-instructions,
 .tile {
   margin-bottom: 5vw;
+}
+
+code {
+  font-size: 15px;
+  padding: 2px 5px;
+  background-color: rgba(0,0,0,.05);
+}
+
+.installation-instructions li {
+  margin-bottom: 1rem;
+}
+
+/*
+* Demo grid
+*/
+.container {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.grid-4,
+.grid-6 {
+  position: relative;
+  float: left;
+  margin-right: 2%;
+}
+
+.grid-4 {
+  width: 31%;
+}
+
+.grid-6 {
+  width: 48%;
+}
+
+@media (max-width: 1200px) {
+  .container { width: 95%; }
+}
+
+@media (max-width: 1024px) {
+  .grid-4,
+  .grid-6 {
+    width: 48%;
+  }
+}
+
+@media (max-width: 540px) {
+  .grid-4,
+  .grid-6 {
+    width: 100%;
+  }
 }

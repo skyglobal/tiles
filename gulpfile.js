@@ -22,7 +22,7 @@ gulp.task('connect', function() {
 });
 
 gulp.task('default', [
-  'connect',
   'sass',
+  'connect',
   'sass:watch'
 ]);
