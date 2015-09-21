@@ -14,7 +14,7 @@ This is a first step to share Polaris tile styles to meet Technology deadlines. 
 Install the repo via NPM:
 
 ```sh
-npm install --save-dev git+ssh://git@github.com/skyglobal/tiles.git#v0.0.1
+npm install --save-dev git+ssh://git@github.com/skyglobal/tiles.git
 ```
 
 Include the SASS module:
