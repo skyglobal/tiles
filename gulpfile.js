@@ -15,10 +15,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('connect', function() {
-  connect.server({
-    root: 'demo',
-    livereload: true
-  });
+  connect.server();
 });
 
 gulp.task('default', [

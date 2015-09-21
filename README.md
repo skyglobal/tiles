@@ -7,6 +7,8 @@ This is a first step to share Polaris tile styles to meet Technology deadlines. 
 
 ## Usage
 
+[Demo page](http://skyglobal.github.io/tiles/)
+
 ### NPM
 
 Install the repo via NPM:
@@ -21,4 +23,6 @@ Include the SASS module:
 import '../node_modules/tiles/src/tile';
 ```
 
-### Demo Page
+### Browser Support
+
+IE8 is not officially supported.
