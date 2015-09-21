@@ -1,6 +1,6 @@
-@import 'node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon';
-@import 'globals/constants';
-@import 'globals/mixins';
+@import '../../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import '../globals/constants';
+@import '../globals/mixins';
 
 $shine-height: 46;
 $tile-dimension: 540;

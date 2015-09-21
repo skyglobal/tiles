@@ -1,7 +1,7 @@
 @import '../node_modules/gradients/src/styles/gradients';
-@import 'globals/colours';
-@import 'globals/constants';
-@import 'globals/responsive';
+@import '../globals/colours';
+@import '../globals/constants';
+@import '../globals/responsive';
 
 @function desktop-font($multiplier) {
   @return ($multiplier / $desktop) * 100vw;

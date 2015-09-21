@@ -1,7 +1,7 @@
 @import '../node_modules/gradients/src/styles/gradients';
-@import 'globals/colours';
-@import 'globals/mixins';
-@import 'globals/responsive';
+@import '../globals/colours';
+@import '../globals/mixins';
+@import '../globals/responsive';
 
 .tile.theme-text-with-background,
 .tile.theme-channel {
