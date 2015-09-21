@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var connect = require('gulp-connect');
 var sass = require('gulp-sass');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('sass', function () {
   gulp.src('./src/*.scss')
@@ -15,8 +16,20 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('connect', function() {
-  connect.server();
+  connect.server({
+    root: 'demo'
+  });
 });
+
+gulp.task('gh-pages', function() {
+  gulp.src('./demo/**/*')
+    .pipe(ghPages());
+});
+
+gulp.task('deploy', [
+  'sass',
+  'gh-pages'
+]);
 
 gulp.task('default', [
   'sass',
