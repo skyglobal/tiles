@@ -5,9 +5,7 @@ var ghPages = require('gulp-gh-pages');
 
 gulp.task('sass', function () {
   gulp.src('./src/*.scss')
-    .pipe(sass({
-      includePaths: require('node-bourbon').includePaths
-    }).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./demo/styles'));
 });
 
