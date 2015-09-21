@@ -10,30 +10,6 @@
 /*
 * Transitions
 */
-/*
-* Design Widths
-*/
-/*
-* Breakpoints
-*/
-/*
-* Fonts
-*/
-/*
-* Transitions
-*/
-/*
-* Design Widths
-*/
-/*
-* Breakpoints
-*/
-/*
-* Fonts
-*/
-/*
-* Transitions
-*/
 .tile .shine {
   position: absolute;
   width: 140%;
@@ -64,6 +40,163 @@
     background-position: 100% 50%; }
   .tile-inner:hover ~ section .shine.bottom {
     background-position: 0 50%; }
+
+/*
+* Design Widths
+*/
+/*
+* Breakpoints
+*/
+/*
+* Fonts
+*/
+/*
+* Transitions
+*/
+/*
+* Design Widths
+*/
+/*
+* Breakpoints
+*/
+/*
+* Fonts
+*/
+/*
+* Transitions
+*/
+.tile {
+  position: relative;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  opacity: .001;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-transform: translateY(60px);
+  -moz-transform: translateY(60px);
+  -ms-transform: translateY(60px);
+  -o-transform: translateY(60px);
+  transform: translateY(60px);
+  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
+  -moz-transition: opacity 0.6s ease, -moz-transform 0.6s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease; }
+  .tile.has-focus {
+    box-shadow: 0 0 100px #255094;
+    border: 4px solid #255094; }
+  .tile.in-view {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1; }
+    .tile.in-view.no-anim {
+      -webkit-transition: opacity 0s ease, -webkit-transform 0s ease;
+      -moz-transition: opacity 0s ease, -moz-transform 0s ease;
+      transition: opacity 0s ease, transform 0s ease; }
+
+.tile-inner {
+  position: relative;
+  overflow: hidden;
+  display: block; }
+
+.tile-link {
+  display: block; }
+  .tile-link:hover .tile-title {
+    color: white; }
+  .tile-link:hover .tile-media-bg {
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05); }
+    .skycom-touch .tile-link:hover .tile-media-bg {
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none; }
+
+.tile-media {
+  position: relative;
+  overflow: hidden; }
+
+.tile-media-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-transition: -webkit-transform 1s ease, margin 1s ease;
+  -moz-transition: -moz-transform 1s ease, margin 1s ease;
+  transition: transform 1s ease, margin 1s ease; }
+
+.tile-content {
+  position: relative; }
+
+.tile-content-inner {
+  position: absolute;
+  left: 1.5vw;
+  right: 1.5vw; }
+  .tile.small .tile-content-inner {
+    top: 1.1vw;
+    bottom: 1vw; }
+  .tile.medium .tile-content-inner {
+    top: 2vw;
+    bottom: 1.25vw; }
+  @media (min-width: 541px) and (max-width: 1024px) {
+    .tile.small .tile-content-inner,
+    .tile.medium .tile-content-inner {
+      top: 2vw;
+      left: 1.5vw;
+      right: 1.5vw;
+      bottom: 1.25vw; } }
+  @media (max-width: 540px) {
+    .tile.small .tile-content-inner,
+    .tile.medium .tile-content-inner {
+      top: 4vw;
+      left: 3vw;
+      right: 3vw;
+      bottom: 2.5vw; } }
+
+.tile-title {
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  color: white;
+  font-family: SkyTextRegular, Helvetica, Arial, Sans-Serif;
+  font-weight: normal; }
+  .tile.small .tile-title {
+    font-size: 1.97368vw; }
+  .tile.medium .tile-title {
+    font-size: 2.36842vw; }
+  @media (min-width: 541px) and (max-width: 1024px) {
+    .tile.small .tile-title,
+    .tile.medium .tile-title {
+      font-size: 3.32031vw; } }
+  @media (max-width: 540px) {
+    .tile.small .tile-title,
+    .tile.medium .tile-title {
+      font-size: 6.2963vw; } }
+
+.tile-details {
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  color: white;
+  font-family: SkyTextRegular, Helvetica, Arial, Sans-Serif;
+  font-weight: normal; }
+  .tile.small .tile-details {
+    font-size: 1.31579vw; }
+  .tile.medium .tile-details {
+    font-size: 1.57895vw; }
+  @media (min-width: 541px) and (max-width: 1024px) {
+    .tile.small .tile-details,
+    .tile.medium .tile-details {
+      font-size: 2.14844vw; } }
+  @media (max-width: 540px) {
+    .tile.small .tile-details,
+    .tile.medium .tile-details {
+      font-size: 4.07407vw; } }
 
 .polaris-bg-default, .tile.type-content .tile-bg-default, .tile.theme-text-with-background .tile-content,
 .tile.theme-channel .tile-content {
@@ -623,136 +756,3 @@
 .tile.theme-channel .tile-title,
 .tile.theme-channel .tile-link:hover .tile-title {
   color: #222222; }
-
-.tile {
-  position: relative;
-  padding: 5px;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
-  opacity: .001;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  -webkit-transform: translateY(60px);
-  -moz-transform: translateY(60px);
-  -ms-transform: translateY(60px);
-  -o-transform: translateY(60px);
-  transform: translateY(60px);
-  -webkit-transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
-  -moz-transition: opacity 0.6s ease, -moz-transform 0.6s ease;
-  transition: opacity 0.6s ease, transform 0.6s ease; }
-  .tile.has-focus {
-    box-shadow: 0 0 100px #255094;
-    border: 4px solid #255094; }
-  .tile.in-view {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1; }
-    .tile.in-view.no-anim {
-      -webkit-transition: opacity 0s ease, -webkit-transform 0s ease;
-      -moz-transition: opacity 0s ease, -moz-transform 0s ease;
-      transition: opacity 0s ease, transform 0s ease; }
-
-.tile-inner {
-  position: relative;
-  overflow: hidden;
-  display: block; }
-
-.tile-link {
-  display: block; }
-  .tile-link:hover .tile-title {
-    color: white; }
-  .tile-link:hover .tile-media-bg {
-    -webkit-transform: scale(1.05, 1.05);
-    -moz-transform: scale(1.05, 1.05);
-    -ms-transform: scale(1.05, 1.05);
-    -o-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05); }
-    .skycom-touch .tile-link:hover .tile-media-bg {
-      -webkit-transform: none;
-      -moz-transform: none;
-      -ms-transform: none;
-      -o-transform: none;
-      transform: none; }
-
-.tile-media {
-  position: relative;
-  overflow: hidden; }
-
-.tile-media-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  -webkit-transition: -webkit-transform 1s ease, margin 1s ease;
-  -moz-transition: -moz-transform 1s ease, margin 1s ease;
-  transition: transform 1s ease, margin 1s ease; }
-
-.tile-content {
-  position: relative; }
-
-.tile-content-inner {
-  position: absolute;
-  left: 1.5vw;
-  right: 1.5vw; }
-  .tile.small .tile-content-inner {
-    top: 1.1vw;
-    bottom: 1vw; }
-  .tile.medium .tile-content-inner {
-    top: 2vw;
-    bottom: 1.25vw; }
-  @media (min-width: 541px) and (max-width: 1024px) {
-    .tile.small .tile-content-inner,
-    .tile.medium .tile-content-inner {
-      top: 2vw;
-      left: 1.5vw;
-      right: 1.5vw;
-      bottom: 1.25vw; } }
-  @media (max-width: 540px) {
-    .tile.small .tile-content-inner,
-    .tile.medium .tile-content-inner {
-      top: 4vw;
-      left: 3vw;
-      right: 3vw;
-      bottom: 2.5vw; } }
-
-.tile-title {
-  padding: 0;
-  margin: 0;
-  line-height: 1em;
-  color: white;
-  font-family: SkyTextRegular, Helvetica, Arial, Sans-Serif;
-  font-weight: normal; }
-  .tile.small .tile-title {
-    font-size: 1.97368vw; }
-  .tile.medium .tile-title {
-    font-size: 2.36842vw; }
-  @media (min-width: 541px) and (max-width: 1024px) {
-    .tile.small .tile-title,
-    .tile.medium .tile-title {
-      font-size: 3.32031vw; } }
-  @media (max-width: 540px) {
-    .tile.small .tile-title,
-    .tile.medium .tile-title {
-      font-size: 6.2963vw; } }
-
-.tile-details {
-  padding: 0;
-  margin: 0;
-  line-height: 1em;
-  color: white;
-  font-family: SkyTextRegular, Helvetica, Arial, Sans-Serif;
-  font-weight: normal; }
-  .tile.small .tile-details {
-    font-size: 1.31579vw; }
-  .tile.medium .tile-details {
-    font-size: 1.57895vw; }
-  @media (min-width: 541px) and (max-width: 1024px) {
-    .tile.small .tile-details,
-    .tile.medium .tile-details {
-      font-size: 2.14844vw; } }
-  @media (max-width: 540px) {
-    .tile.small .tile-details,
-    .tile.medium .tile-details {
-      font-size: 4.07407vw; } }
