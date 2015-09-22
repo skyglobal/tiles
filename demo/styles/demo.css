@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background: #F0F0F0;
+  background: #FDFDFD;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
 
 code {
   font-size: 15px;
-  padding: 2px 5px;
+  padding: 2px;
   background-color: rgba(0,0,0,.05);
 }
 
