@@ -1,0 +1,98 @@
+/*
+* Design Widths
+*/
+/*
+* Breakpoints
+*/
+/*
+* Fonts
+*/
+/*
+* Transitions
+*/
+.panel {
+  clear: both;
+  float: none;
+  max-height: 200vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #222222; }
+  .panel.closed {
+    height: 0;
+    max-height: 0;
+    margin-bottom: 0;
+    visibility: hidden; }
+  .panel.closing {
+    margin-bottom: 0; }
+  .panel.open {
+    height: auto; }
+
+.panel-anchor {
+  position: relative;
+  top: 50px; }
+
+.panel-anchor-access-hide {
+  position: absolute;
+  left: -9999px; }
+
+.panel-inner {
+  display: table;
+  height: 100vh;
+  min-height: 100vh;
+  line-height: 100vh;
+  position: relative;
+  width: 100%; }
+  .panel-inner:after,
+  .panel-inner:before {
+    content: '';
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%; }
+  .panel-inner:before {
+    top: 0;
+    background-image: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.9)); }
+  .panel-inner:after {
+    bottom: 0;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9)); }
+  @media (max-width: 1024px) {
+    .panel-inner {
+      height: auto;
+      line-height: 1rem;
+      max-height: 200vh;
+      min-height: 0; } }
+
+.panel-content {
+  display: table-cell;
+  overflow: visible;
+  height: auto;
+  vertical-align: middle;
+  line-height: 1rem;
+  padding: 60px 6.25%;
+  color: white; }
+
+.panel-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 6.25%;
+  line-height: 1rem;
+  overflow: hidden; }
+
+.panel-header-inner {
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+.panel-close {
+  color: white;
+  display: block;
+  font-size: 2em;
+  line-height: 60px;
+  position: absolute;
+  right: 0;
+  top: 0; }
+  @media (max-width: 1024px) {
+    .panel-close {
+      font-size: 1.5em; } }

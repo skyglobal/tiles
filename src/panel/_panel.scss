@@ -1,0 +1,76 @@
+@import '../globals/colours';
+@import '../globals/responsive';
+@import '../globals/mixins';
+
+@mixin panel-shadow-gradient($direction) {
+  background-image: linear-gradient(to $direction, transparent, black(90));
+}
+
+.panel {
+  clear: both;
+  float: none;
+  max-height: 200vh;
+  position: relative;
+  overflow: hidden;
+  background-color: $dark-grey;
+
+  &.closed {
+    height: 0;
+    max-height: 0;
+    margin-bottom: 0;
+    visibility: hidden;
+  }
+
+  &.closing {
+    margin-bottom: 0;
+  }
+
+  &.open {
+    height: auto;
+  }
+}
+
+.panel-anchor {
+  position: relative;
+  top: 50px;
+}
+
+.panel-anchor-access-hide {
+  position: absolute;
+  left: -9999px;
+}
+
+.panel-inner {
+  display: table;
+  height: 100vh;
+  min-height: 100vh;
+  line-height: 100vh;
+  position: relative;
+  width: 100%;
+
+  &:after,
+  &:before {
+    content: '';
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  &:before {
+    top: 0;
+    @include panel-shadow-gradient(top);
+  }
+
+  &:after {
+    bottom: 0;
+    @include panel-shadow-gradient(bottom);
+  }
+
+  @include mobile-tablet {
+    height: auto;
+    line-height: 1rem;
+    max-height: 200vh;
+    min-height: 0;
+  }
+}
