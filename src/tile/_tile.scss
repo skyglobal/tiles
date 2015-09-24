@@ -65,6 +65,7 @@
   left: 0;
   top: 0;
   width: 100%;
+  border: 0px;
   @include transition(transform $long-transition ease, margin $long-transition ease);
 }
 

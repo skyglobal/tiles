@@ -34,6 +34,7 @@
   @include sponsor-sizing($min: 30, $max: 60);
   vertical-align: middle;
   width: auto;
+  border-width: 0;
 
   .tile-sponsor & {
     @include mobile {
