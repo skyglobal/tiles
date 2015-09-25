@@ -1,38 +1,35 @@
 /*
-* Design Widths
+*  #design-widths
 */
 /*
-* Breakpoints
+*  #breakpoints
 */
 /*
-* Fonts
+*  #transitions
 */
 /*
-* Transitions
+*  #font-families
 */
 /*
-* Design Widths
+*  #design-widths
 */
 /*
-* Breakpoints
+*  #breakpoints
 */
 /*
-* Fonts
+*  #transitions
 */
 /*
-* Transitions
+*  #responsive-mixins
 */
 /*
-* Design Widths
+*  #design-widths
 */
 /*
-* Breakpoints
+*  #breakpoints
 */
 /*
-* Fonts
-*/
-/*
-* Transitions
+*  #transitions
 */
 .tile .shine {
   position: absolute;
@@ -278,28 +275,25 @@
       /* W3C */ } }
 
 /*
-* Design Widths
+*  #design-widths
 */
 /*
-* Breakpoints
+*  #breakpoints
 */
 /*
-* Fonts
+*  #transitions
 */
 /*
-* Transitions
+*  #design-widths
 */
 /*
-* Design Widths
+*  #breakpoints
 */
 /*
-* Breakpoints
+*  #transitions
 */
 /*
-* Fonts
-*/
-/*
-* Transitions
+*  #responsive-mixins
 */
 .tile.type-account .tile-link {
   outline: none; }
@@ -415,28 +409,31 @@
       /* W3C */ } }
 
 /*
-* Design Widths
+*  #design-widths
 */
 /*
-* Breakpoints
+*  #breakpoints
 */
 /*
-* Fonts
+*  #transitions
 */
 /*
-* Transitions
+*  #logo-images
 */
 /*
-* Design Widths
+*  #logo-background-mixins
 */
 /*
-* Breakpoints
+*  #design-widths
 */
 /*
-* Fonts
+*  #breakpoints
 */
 /*
-* Transitions
+*  #transitions
+*/
+/*
+*  #responsive-mixins
 */
 .tile.type-channel:hover .tile-inner .tile-bg-active,
 .tile.type-channel:focus .tile-inner .tile-bg-active,
@@ -608,40 +605,43 @@
       /* W3C */ } }
 
 /*
-* Design Widths
+*  #design-widths
 */
 /*
-* Breakpoints
+*  #breakpoints
 */
 /*
-* Fonts
+*  #transitions
 */
 /*
-* Transitions
+*  #logo-images
 */
 /*
-* Design Widths
+*  #logo-background-mixins
 */
 /*
-* Breakpoints
+*  #design-widths
 */
 /*
-* Fonts
+*  #breakpoints
 */
 /*
-* Transitions
+*  #transitions
 */
 /*
-* Design Widths
+*  #responsive-mixins
 */
 /*
-* Breakpoints
+*  #design-widths
 */
 /*
-* Fonts
+*  #breakpoints
 */
 /*
-* Transitions
+*  #transitions
+*/
+/*
+*  #responsive-mixins
 */
 .sponsor-image[src*=coty].hero-logo-sponsor {
   min-height: 30px;
@@ -953,16 +953,16 @@
       /* W3C */ } }
 
 /*
-* Design Widths
+*  #design-widths
 */
 /*
-* Breakpoints
+*  #breakpoints
 */
 /*
-* Fonts
+*  #transitions
 */
 /*
-* Transitions
+*  #responsive-mixins
 */
 .tile.theme-text-with-background .tile-media,
 .tile.theme-channel .tile-media {
