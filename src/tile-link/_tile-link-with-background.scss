@@ -1,7 +1,7 @@
 @import '../../node_modules/gradients/src/styles/gradients';
-@import '../globals/colours';
-@import '../globals/mixins';
-@import '../globals/responsive';
+@import '../../node_modules/polaris-global/globals/colours';
+@import '../../node_modules/polaris-global/globals/mixins';
+@import '../../node_modules/polaris-global/globals/responsive';
 
 .tile.theme-text-with-background,
 .tile.theme-channel {

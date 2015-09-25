@@ -1,8 +1,8 @@
 @import '../../node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/bourbon';
-@import '../globals/colours';
-@import '../globals/constants';
-@import '../globals/mixins';
-@import '../globals/responsive';
+@import '../../node_modules/polaris-global/globals/colours';
+@import '../../node_modules/polaris-global/globals/constants';
+@import '../../node_modules/polaris-global/globals/mixins';
+@import '../../node_modules/polaris-global/globals/responsive';
 
 @import '../shine/shine';
 

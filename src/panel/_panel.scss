@@ -1,6 +1,6 @@
-@import '../globals/colours';
-@import '../globals/responsive';
-@import '../globals/mixins';
+@import '../../node_modules/polaris-global/globals/colours';
+@import '../../node_modules/polaris-global/globals/responsive';
+@import '../../node_modules/polaris-global/globals/mixins';
 
 @mixin panel-shadow-gradient($direction) {
   background-image: linear-gradient(to $direction, transparent, black(90));
