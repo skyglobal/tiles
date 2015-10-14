@@ -172,6 +172,8 @@
   color: white;
   font-family: SkyTextRegular, Helvetica, Arial, Sans-Serif;
   font-weight: normal; }
+  .tile:hover .tile-title {
+    text-decoration: underline; }
   .tile.small .tile-title {
     font-size: 1.97368vw; }
   .tile.medium .tile-title {
@@ -825,6 +827,9 @@
   -webkit-transition: color 0.4s ease;
   -moz-transition: color 0.4s ease;
   transition: color 0.4s ease; }
+
+.tile.type-link:hover {
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4); }
 
 .tile.type-link .tile-media {
   padding-bottom: 100%; }
