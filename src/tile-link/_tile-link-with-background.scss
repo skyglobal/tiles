@@ -5,14 +5,12 @@
 
 .tile.theme-text-with-background,
 .tile.theme-channel {
-
   .tile-media {
     padding-bottom: 56.25%;
   }
 
   .tile-content {
     padding-bottom: 43.75%;
-    @extend .polaris-bg-default;
   }
 
   .tile-title,
@@ -20,3 +18,40 @@
     color: $dark-grey;
   }
 }
+
+.tile.theme-text-with-background {
+
+  .tile-bg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    > div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-size: 100% 150%;
+    }
+  }
+
+  .tile-bg-default {
+    @extend .polaris-bg-default;
+  }
+
+  .tile-bg-active {
+    @include transition(opacity $med-transition ease);
+    opacity: 0;
+    @extend .polaris-bg-sky-offers-dark;
+  }
+
+  &:hover{
+    .tile-bg-active {
+      opacity: 1;
+    }
+  }
+}
+
