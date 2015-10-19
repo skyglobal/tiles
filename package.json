@@ -5,7 +5,7 @@
   "author": "David Nicholson",
   "license": "ISC",
   "dependencies": {
-    "gradients": "git+ssh://git@github.com/skyglobal/gradients.git#v0.1.3",
+    "gradients": "git+ssh://git@github.com/skyglobal/gradients.git#v0.1.5",
     "node-bourbon": "^4.2.3",
     "polaris-global": "git+ssh://git@github.com/skyglobal/polaris-global.git"
   },

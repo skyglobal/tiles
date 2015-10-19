@@ -45,10 +45,10 @@
   .tile-bg-active {
     @include transition(opacity $med-transition ease);
     opacity: 0;
-    @extend .polaris-bg-sky-offers-dark;
+    @extend .polaris-bg-default-dark;
   }
 
-  &:hover{
+  &:hover {
     .tile-bg-active {
       opacity: 1;
     }
