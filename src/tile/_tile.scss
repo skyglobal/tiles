@@ -115,6 +115,10 @@
   color: $white;
   @include font($skytext-reg);
 
+  .tile:hover & {
+    text-decoration: underline;
+  }
+
   .tile.small & {
     font-size: 30 / $desktop * 100vw;
   }
