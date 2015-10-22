@@ -17,12 +17,14 @@
     }
   }
 
-  &:hover .tile-title {
-    text-decoration: none;
-  }
+  &:hover {
+    .tile-title {
+      text-decoration: none;
+    }
 
-  &:hover .tile-details {
-    text-decoration: underline;
+    .tile-details {
+      text-decoration: underline;
+    }
   }
 
   .tile-content {
