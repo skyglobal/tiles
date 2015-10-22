@@ -322,6 +322,12 @@
   .tile.type-account .tile-link:focus {
     outline: none; }
 
+.tile.type-account:hover .tile-title {
+  text-decoration: none; }
+
+.tile.type-account:hover .tile-details {
+  text-decoration: underline; }
+
 .tile.type-account .tile-content {
   padding-bottom: 99.99%; }
 
