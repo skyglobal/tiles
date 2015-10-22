@@ -17,6 +17,16 @@
     }
   }
 
+  &:hover {
+    .tile-title {
+      text-decoration: none;
+    }
+
+    .tile-details {
+      text-decoration: underline;
+    }
+  }
+
   .tile-content {
     padding-bottom: 99.99%;
     @extend .polaris-bg-sky-account;
