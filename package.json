@@ -1,12 +1,12 @@
 {
   "name": "tiles",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Initial styles for polaris tiles. Not intended for use long term",
   "author": "David Nicholson",
   "license": "ISC",
   "dependencies": {
     "gradients": "git+ssh://git@github.com/skyglobal/gradients.git#v0.1.5",
-    "node-bourbon": "^4.2.3",
+    "bourbon": "4.2.3",
     "polaris-global": "git+ssh://git@github.com/skyglobal/polaris-global.git"
   },
   "devDependencies": {
