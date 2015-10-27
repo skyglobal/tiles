@@ -1,8 +1,8 @@
-@import '../../node_modules/gradients/src/styles/gradients';
-@import '../../node_modules/polaris-global/globals/colours';
-@import '../../node_modules/polaris-global/globals/constants';
-@import '../../node_modules/polaris-global/globals/logos';
-@import '../../node_modules/polaris-global/globals/responsive';
+@import '~gradients/src/styles/gradients';
+@import '~polaris-global/globals/colours';
+@import '~polaris-global/globals/constants';
+@import '~polaris-global/globals/logos';
+@import '~polaris-global/globals/responsive';
 
 .tile.type-channel {
   &:hover,

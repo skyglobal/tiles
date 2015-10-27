@@ -3,9 +3,13 @@ var connect = require('gulp-connect');
 var sass = require('gulp-sass');
 var ghPages = require('gulp-gh-pages');
 
+var moduleImporter = require('node-sass-module-importer');
+
 gulp.task('sass', function () {
   gulp.src('./src/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+        importer: moduleImporter
+      }).on('error', sass.logError))
     .pipe(gulp.dest('./demo/styles'));
 });
 
