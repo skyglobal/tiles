@@ -1,5 +1,6 @@
 @import '~gradients/src/styles/gradients';
 @import '~polaris-global/globals/colours';
+@import '~polaris-global/globals/fonts';
 @import '~polaris-global/globals/mixins';
 @import '~polaris-global/globals/responsive';
 
@@ -52,6 +53,17 @@
     .tile-bg-active {
       opacity: 1;
     }
+  }
+
+  .tile-legal {
+    bottom: 1vw;
+    left: 1.5vw;
+    position: absolute;
+    color: $dark-grey;
+    font-size: 13px;
+    @include font($skytext-reg);
+    line-height: 1em;
+    width: 100%;
   }
 }
 
