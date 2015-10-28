@@ -56,14 +56,14 @@
   }
 
   .tile-legal {
+    position: absolute;
     bottom: 1vw;
     left: 1.5vw;
-    position: absolute;
+    width: 100%;
     color: $dark-grey;
     font-size: 13px;
-    @include font($skytext-reg);
     line-height: 1em;
-    width: 100%;
+    @include font($skytext-reg);
 
     @include tablet {
       bottom: 2vw;
