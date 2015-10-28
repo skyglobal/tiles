@@ -55,23 +55,33 @@
     }
   }
 
-  .tile-legal {
-    position: absolute;
-    bottom: 1vw;
-    left: 1.5vw;
-    color: $dark-grey;
-    font-size: 13px;
-    line-height: 1em;
-    @include font($skytext-reg);
+  &.small .tile-legal {
+    bottom: $small-tile-content-vertical-spacing;
+    left: $tile-content-horizontal-spacing;
+  }
 
-    @include tablet {
-      bottom: 2vw;
-    }
+  &.medium .tile-legal {
+    bottom: $medium-tile-content-vertical-spacing;
+    left: $tile-content-horizontal-spacing;
+  }
 
-    @include mobile {
-      left: 3vw;
-      bottom: 4vw;
+  &.small,
+  &.medium {
+    .tile-legal {
+      position: absolute;
+      color: $dark-grey;
+      font-size: 13px;
+      line-height: 1em;
+      @include font($skytext-reg);
+
+      @include tablet {
+        bottom: $tile-content-tablet-vertical-spacing;
+      }
+
+      @include mobile {
+        left: $tile-content-mobile-horizontal-spacing;
+        bottom: $tile-content-mobile-vertical-spacing;
+      }
     }
   }
 }
-
