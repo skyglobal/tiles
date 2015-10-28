@@ -64,6 +64,15 @@
     @include font($skytext-reg);
     line-height: 1em;
     width: 100%;
+
+    @include tablet {
+      bottom: 2vw;
+    }
+
+    @include mobile {
+      left: 3vw;
+      bottom: 4vw;
+    }
   }
 }
 
