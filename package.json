@@ -9,7 +9,7 @@
   "author": "David Nicholson",
   "license": "ISC",
   "scripts": {
-    "update-demo-page": "git stash --keep-index; gulp sass && git add ./demo/; RESULT=$?; git stash pop; [ $RESULT -ne 0 ] && exit 1; exit 0"
+    "update-demo-page": "echo '----\nAutomatically updating demo page with staged changes\n----' && git stash --keep-index; gulp sass && git add ./demo/; RESULT=$?; git stash pop; [ $RESULT -ne 0 ] && exit 1; exit 0"
   },
   "pre-commit": [
     "update-demo-page"
