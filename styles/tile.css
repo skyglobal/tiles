@@ -973,6 +973,9 @@
       /* W3C */ } }
 
 /*
+*  #font-families
+*/
+/*
 *  #design-widths
 */
 /*
@@ -1025,3 +1028,26 @@
 
 .tile.theme-text-with-background:hover .tile-bg-active {
   opacity: 1; }
+
+.tile.theme-text-with-background.small .tile-legal {
+  bottom: 1.1vw;
+  left: 1.5vw; }
+
+.tile.theme-text-with-background.medium .tile-legal {
+  bottom: 2vw;
+  left: 1.5vw; }
+
+.tile.theme-text-with-background.small .tile-legal, .tile.theme-text-with-background.medium .tile-legal {
+  position: absolute;
+  color: #222222;
+  font-size: 13px;
+  line-height: 1em;
+  font-family: SkyTextRegular, Helvetica, Arial, Sans-Serif;
+  font-weight: normal; }
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .tile.theme-text-with-background.small .tile-legal, .tile.theme-text-with-background.medium .tile-legal {
+      bottom: 2vw; } }
+  @media (max-width: 640px) {
+    .tile.theme-text-with-background.small .tile-legal, .tile.theme-text-with-background.medium .tile-legal {
+      left: 3vw;
+      bottom: 4vw; } }
