@@ -1,5 +1,6 @@
 @import '~gradients/src/styles/gradients';
 @import '~polaris-global/globals/colours';
+@import '~polaris-global/globals/fonts';
 @import '~polaris-global/globals/mixins';
 @import '~polaris-global/globals/responsive';
 
@@ -53,5 +54,34 @@
       opacity: 1;
     }
   }
-}
 
+  &.small .tile-legal {
+    bottom: $small-tile-content-vertical-spacing;
+    left: $tile-content-horizontal-spacing;
+  }
+
+  &.medium .tile-legal {
+    bottom: $medium-tile-content-vertical-spacing;
+    left: $tile-content-horizontal-spacing;
+  }
+
+  &.small,
+  &.medium {
+    .tile-legal {
+      position: absolute;
+      color: $dark-grey;
+      font-size: 13px;
+      line-height: 1em;
+      @include font($skytext-reg);
+
+      @include tablet {
+        bottom: $tile-content-tablet-vertical-spacing;
+      }
+
+      @include mobile {
+        left: $tile-content-mobile-horizontal-spacing;
+        bottom: $tile-content-mobile-vertical-spacing;
+      }
+    }
+  }
+}
