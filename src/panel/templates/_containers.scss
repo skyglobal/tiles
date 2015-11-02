@@ -1,0 +1,31 @@
+@import '~susy/sass/susy';
+@import './mixins';
+
+@mixin desktop-container {
+  @include container;
+  @include layout($grid16);
+}
+
+@mixin tablet-container {
+  @include zero-side-margins;
+  @include zero-side-padding;
+
+  @include container(87.890625%);
+  @include layout($grid12);
+}
+
+@mixin tablet-wide-container {
+  @include zero-side-margins;
+  @include zero-side-padding;
+
+  @include container(97.65625%);
+  @include layout($grid12);
+}
+
+@mixin mobile-container {
+  @include zero-side-margins;
+  @include zero-side-padding;
+
+  @include container(96.66666666666667%);
+  @include layout($grid6);
+}

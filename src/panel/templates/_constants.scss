@@ -1,0 +1,21 @@
+$susy: (
+  gutter-position: split
+);
+
+// 15px gutters @ 1520px
+$grid16: (
+  columns: 16,
+  gutters: .462
+);
+
+// 12px gutters @ 1024px
+$grid12: (
+  columns: 12,
+  gutters: .471
+);
+
+// 9px gutters @ 540px
+$grid6: (
+  columns: 6,
+  gutters: .261
+);

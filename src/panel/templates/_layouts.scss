@@ -1,0 +1,17 @@
+@import '~susy/sass/susy';
+@import './constants';
+
+@mixin span2-grid16-margin {
+  margin-right: span(2 of 16) + gutter(8);
+  margin-left: span(2 of 16) + gutter(8);
+}
+
+@mixin span2-grid16-padding {
+  padding-left: span(2 of 16) + gutter(8);
+  padding-right: span(2 of 16) + gutter(8);
+}
+
+@mixin span1-grid16-padding {
+  padding-left: span(1 of 16) + gutter(8);
+  padding-right: span(1 of 16) + gutter(8);
+}

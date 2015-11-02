@@ -1,0 +1,17 @@
+@mixin top-left-fullsize-absolute() {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@mixin zero-side-margins() {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@mixin zero-side-padding() {
+  padding-left: 0;
+  padding-right: 0;
+}

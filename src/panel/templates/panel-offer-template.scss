@@ -1,0 +1,96 @@
+@import '~susy/sass/susy';
+@import '~polaris-global/globals/colours';
+@import './grid';
+@import '~polaris-global/globals/constants';
+@import '~polaris-global/globals/responsive';
+
+.panel.offer-template {
+
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 50%, rgba(202, 200, 211, 1) 100%);
+
+  .panel-inner {
+    &:before {
+      height: 50px;
+      background: linear-gradient(to top, transparent 0%, rgba(209, 209, 209, .8) 80%, rgba(165, 164, 169, 1) 100%);
+    }
+
+    &:after {
+      height: 50px;
+      background: linear-gradient(to bottom, transparent 0%, rgba(209, 209, 209, .8) 80%, rgba(165, 164, 169, 1) 100%);
+    }
+  }
+
+  .panel-close {
+    color: $black;
+    z-index: $layer-1;
+  }
+
+  .panel-content {
+    @include desktop-container;
+    @include span2-grid16-padding;
+    position: relative;
+    clear: both;
+    padding-left: gutter(8);
+    padding-right: span(1 of 16) + gutter(8);
+
+    color: black !important;
+
+    img {
+      width: 100%;
+    }
+
+    .panel-offer-title {
+      font-size: 40 / $desktop * 100vw;
+      line-height: 1.2em;
+    }
+
+    .panel-offer-description {
+      font-size: 24 / $desktop * 100vw;
+      line-height: 1.2em;
+    }
+
+    .panel-offer-terms {
+      font-size: 14 / $desktop * 100vw;
+      line-height: 1.2em;
+    }
+
+    .panel-offer-footer {
+      font-size: 12 / $desktop * 100vw;
+      line-height: 1.1em;
+      padding-left: gutter(8);
+      padding-right: span(8 of 16);
+      position: absolute;
+      bottom: 50px;
+    }
+
+    .column-5 {
+      @include span(4 of 12);
+    }
+
+    .column-4 {
+      @include span(4 of 12);
+    }
+
+    .column-3 {
+      @include span(3 of 12);
+    }
+  }
+
+  .rejoin-sky {
+    text-transform: uppercase;
+    display: inline-block;
+    border: 1px solid $dark-grey;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1vw 2.6vw;
+    margin: 20px 0 0;
+    cursor: pointer;
+    font-size: 22 / $desktop * 100vw;
+
+    &:hover {
+      background: $dark-grey;
+      color: $light-grey;
+    }
+  }
+}
