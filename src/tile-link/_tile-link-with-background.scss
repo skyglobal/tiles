@@ -4,6 +4,8 @@
 @import '~polaris-global/globals/mixins';
 @import '~polaris-global/globals/responsive';
 
+@import '../globals/constants';
+
 .tile.theme-text-with-background,
 .tile.theme-channel {
   .tile-media {

@@ -5,13 +5,7 @@
 @import '~polaris-global/globals/responsive';
 
 @import '../shine/shine';
-
-$tile-content-horizontal-spacing: 1.5vw;
-$tile-content-mobile-horizontal-spacing: 3vw;
-$small-tile-content-vertical-spacing: 1.1vw;
-$medium-tile-content-vertical-spacing: 2vw;
-$tile-content-tablet-vertical-spacing: 2vw;
-$tile-content-mobile-vertical-spacing: 4vw;
+@import '../globals/constants';
 
 .tile {
   position: relative;
