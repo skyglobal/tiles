@@ -1,0 +1,484 @@
+  a img{
+    cursor: pointer;
+}
+
+/*Open up below*/
+#upgrade-wrapper-bottom{
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.6s;
+    z-index: 1;
+    position: relative;
+    bottom: 0;
+    background: #222;
+    -webkit-font-smoothing: antialiased;
+}
+
+#upgrade-wrapper-bottom a{
+    text-decoration: underline;
+}
+
+#upgrade-wrapper-bottom .content:after{
+    clear: left;
+    content: "";
+    display: block;
+    height: 50px;
+}
+
+#upgrade-wrapper-bottom.open{
+    height: auto;
+}
+
+#upgrade-wrapper-bottom .content{
+    color: #fff;
+    height: 100%;
+}
+
+.emailAddress{
+    margin:0 0 40px 0 !important;
+    font-weight: bold;
+}
+
+.emailAddress a{
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+
+.editEmail{
+    display: none;
+    float: none !important;
+    margin: 0 0 40px 0;
+    color: #222;
+}
+
+.bottomAccordian{
+    display: none;
+}
+
+#upgrade-wrapper-bottom .sup{
+    font-size: 12px !important;
+    line-height: 20px !important;
+}
+
+#upgrade-wrapper-bottom .content input[type="checkbox"]{
+    float: left;
+    clear: left;
+    margin: 3px 0 0;
+}
+
+#upgrade-wrapper-bottom .content label{
+    box-sizing: border-box;
+    display: block;
+    float: left;   
+    width: 90%;
+    margin: 0 0 10px 10px;
+    font-size: 16px;
+}
+
+#upgrade-wrapper-bottom .content button{
+    clear: left;
+    float: left;
+    margin: 20px 0 0;
+}
+
+button.placeOrder {
+  display: block;
+  margin: 20px 0 0 0;
+}
+
+#tandclabel.error{
+    display: block;
+   float: right;
+   width: 26%;
+   padding: 0 0 0 30px;
+   color: #e11e00 ;
+   background: transparent url("../exclamation.png") no-repeat left top;
+   min-height: 18px;
+   margin-right: 4%;
+   font-weight: bold;
+   line-height: 1.3;
+   text-align: left;
+}
+
+.pricePod{
+    margin: 0 0 40px;
+}
+
+.close-upgrade{
+    position: absolute;
+    top: 20px;
+    right:20px;
+    color: #fff;
+}
+
+.success-message{
+    display: none;
+}
+
+.loader {
+    display: none;
+    color:#777;
+    height: 100px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width: 100px;
+    z-index: 100;
+}
+
+.loader:after {
+    animation: rotate 1s infinite linear;
+    border:1px solid #555;
+    border-radius: 100%;
+    box-shadow:1px 1px #fff;
+    content:'';
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    z-index:-1;
+    top:0;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+/************/
+/*Extras*/
+/************/
+#controllsforSlider{
+    position: fixed;
+    width: 40px;
+    height: 23px;
+    display: none;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #444;
+    z-index: 10;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.checkbox {
+  font-size: 22px;
+  background-color: #f0f0f0;
+  border-radius: 1em;
+  width: 1.72em;
+  height: 1em;
+  display: inline-block;
+  position: relative;
+  transition: all .15s;
+  cursor: pointer;
+  -webkit-user-select: none; 
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox:after {
+  font-size: 16px;
+  content: "";
+  position: absolute;
+  top: .1875em;
+  left: .1875em;
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  background-color: #555657;
+  transition: all .15s;
+}
+
+.checkbox:hover:after {
+  background-color: #414242;
+}
+
+.checkbox.checked {
+  background-color: #0fd59f;
+}
+
+.checkbox.checked:after {
+  background-color: #f7f7f7;
+  left: 1.1875em;
+}
+
+.checkbox.checked:hover:after {
+  background-color: #eeeeee;
+}
+
+ .pricePod h3 {
+  margin-bottom: 0;
+}
+ .pricePod p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+ .pricePod p.price {
+  font-size: 68px;
+  margin-bottom: 18px;
+  margin-top: 1px;
+}
+ .pricePod p.price sup {
+  display: inline-block;
+  width: 31px;
+  font-size: 20px;
+  line-height: 20px;
+  vertical-align: text-top;
+  position: relative;
+  left: 7px;
+  top: 12px;
+}
+ .pricePod p.price span {
+  margin-bottom: 3px;
+  margin-left: -4px;
+  line-height: 1;
+}
+ .pricePod p.price span.frequency,
+ .pricePod p.price span.supportive {
+  font-size: 16px;
+  line-height: 20px;
+}
+ .pricePod p.price span.frequency {
+  position: relative;
+  left: -20px;
+}
+ .pricePod p.price span.supportive {
+  display: block;
+  float: none;
+  clear: left;
+  margin: 0;
+}
+ .pricePod p.price.offer {
+  color: #f15a22;
+}
+ .pricePod p.price.offer span.supportive,
+ .pricePod p.price.offer span.frequency {
+  color: #333;
+}
+ .pricePod p.price.offer span.oldprice {
+  display: block;
+  position: relative;
+  bottom: -8px;
+  margin: 0;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 4px;
+}
+ .pricePod p.price.offer span.oldprice sup {
+  font-size: 13px;
+  top: 2px;
+  left: 4px;
+  width: 16px;
+}
+ .pricePod p.price.offer span.newprice {
+  margin-left: -4px;
+}
+ .pricePod p.price.offer span.oldprice del {
+  position: relative;
+  text-decoration: none;
+}
+ .pricePod p.price.offer span.oldprice del:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid;
+  border-color: inherit;
+  -webkit-transform: rotate(-25deg);
+  -moz-transform: rotate(-25deg);
+  -ms-transform: rotate(-25deg);
+  -o-transform: rotate(-25deg);
+  transform: rotate(-25deg);
+}
+ .pricePod p.price.offer span.oldprice.haspence del:before {
+  right: -6px;
+  -webkit-transform: rotate(-13deg);
+  -moz-transform: rotate(-13deg);
+  -ms-transform: rotate(-13deg);
+  -o-transform: rotate(-13deg);
+  transform: rotate(-13deg);
+}
+ .pricePod p.supportive {
+  margin: 0 0 14px;
+}
+ .pricePod p.supportive .skycon-chevron {
+  font-size: 12px;
+  line-height: 1;
+  margin-right: 6px;
+  vertical-align: baseline;
+}
+ .pricePod button,
+ .pricePod a,
+ .pricePod input,
+ .pricePod img.reward {
+  margin-bottom: 18px;
+}
+ .pricePod .disclaimer {
+  margin: 0;
+}
+ .pricePod .roundel img {
+  margin-bottom: 20px;
+}
+ .pricePod.dynamicPrice .spinner {
+  display: none;
+}
+ .pricePod.dynamicPrice.loading {
+  position: relative;
+}
+ .pricePod.dynamicPrice.loading p span,
+ .pricePod.dynamicPrice.loading p.disclaimer,
+ .pricePod.dynamicPrice.loading p.priceSubheadline,
+ .pricePod.dynamicPrice.loading h3,
+ .pricePod.dynamicPrice.loading a,
+ .pricePod.dynamicPrice.loading button {
+  visibility: hidden;
+}
+ .pricePod.dynamicPrice.loading .spinner,
+ .pricePod.dynamicPrice.loading .pleasewait {
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  width: 70px;
+  text-align: center;
+}
+ .pricePod.dynamicPrice.loading .pleasewait {
+  top: 0;
+  left: 0;
+  width: 40%;
+  text-align: left;
+}
+ .pricePod.dynamicPrice.loading .spinner > span {
+  width: 18px;
+  height: 18px;
+  background-color: #eaeaea;
+  border: 1px solid #d1d1d1;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+  animation: bouncedelay 1.4s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  margin: 0;
+}
+ .pricePod.dynamicPrice.loading .spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+ .pricePod.dynamicPrice.loading .spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+ .pricePod.dynamicPrice.loading .spinner * {
+  visibility: visible;
+}
+.lt-ie10  .pricePod.dynamicPrice.loading .spinner {
+  background: transparent url("data:image/gif;base64,R0lGODlhKwALAPEAAOrq6nd3d7GxsXd3dyH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAKwALAAACMoSOCMuW2diD88UKG95W88uF4DaGWFmhZid93pq+pwxnLUnXh8ou+sSz+T64oCAyTBUAACH5BAkKAAAALAAAAAArAAsAAAI9xI4IyyAPYWOxmoTHrHzzmGHe94xkmJifyqFKQ0pwLLgHa82xrekkDrIBZRQab1jyfY7KTtPimixiUsevAAAh+QQJCgAAACwAAAAAKwALAAACPYSOCMswD2FjqZpqW9xv4g8KE7d54XmMpNSgqLoOpgvC60xjNonnyc7p+VKamKw1zDCMR8rp8pksYlKorgAAIfkECQoAAAAsAAAAACsACwAAAkCEjgjLltnYmJS6Bxt+sfq5ZUyoNJ9HHlEqdCfFrqn7DrE2m7Wdj/2y45FkQ13t5itKdshFExC8YCLOEBX6AhQAADsAAAAAAAAAAAA=") no-repeat;
+  display: block;
+  visibility: visible;
+  margin: 0;
+}
+.lt-ie10  .pricePod.dynamicPrice.loading .spinner > span {
+  display: none;
+}
+ .white .pricePod p.price.offer {
+  color: #fff;
+}
+ .white .pricePod p.price.offer span.supportive,
+ .white .pricePod p.price.offer span.frequency,
+ .white .pricePod p.price.offer span.oldprice,
+ .white .pricePod p.price.offer span.newprice {
+  color: #fff;
+}
+
+  @-webkit-keyframes bouncedelay {
+    0%, 80%, 100% {
+      -webkit-transform: scale(0.0)
+    }
+    40% {
+      -webkit-transform: scale(1.0)
+    }
+  }
+
+  @keyframes bouncedelay {
+    0%, 80%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    }
+    40% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+@media (max-width: 1150px) {
+   .pricePod p.price span {
+    line-height: 62px;
+  }
+   .pricePod p.price span.oldprice {
+    line-height: 28px;
+  }
+   .pricePod p.price span.frequency {
+    position: static;
+    display: block;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+   .pricePod p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+   .pricePod p.price {
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+   .pricePod p.price span {
+    line-height: 40px;
+  }
+   .pricePod p.price span.frequency,
+   .pricePod p.price span.supportive {
+    line-height: 20px;
+  }
+   .pricePod p.price sup {
+    font-size: 16px;
+    left: 3px;
+    top: 5px;
+  }
+   .pricePod p.price.offer.oldprice.haspence del:before {
+    right: -2px;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+  }
+   .pricePod p.price.offer.oldprice.haspence del:before span.oldprice {
+    font-size: 24px;
+    line-height: 20px;
+  }
+   .pricePod p.price.offer.oldprice.haspence del:before span.oldprice sup {
+    top: 0px;
+    left: 2px;
+  }
+   .pricePod .disclaimer {
+    font-size: 13px;
+    line-height: 16px;
+  }
+   .pricePod .roundel img {
+    margin: 10px 0 0;
+  }
+}
