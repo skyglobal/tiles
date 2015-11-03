@@ -166,9 +166,10 @@
             <a class="panel-close close" href="#"></a>
           </div>
         </div>
+        <div id="loader" class="loader"></div>
         <div class="panel-content">
           <div class="skycom_container clearfix">
-            <div class="order-content">
+            <div id="order-content" class="order-content">
               <div class="content-container skycom-6">
                 <h2>Add Sky Movies</h2>
                 <p>Have an entertaining christmas</p>
@@ -196,14 +197,14 @@
               </div>
               <div class="content-container skycom-6">
                 <h3>Is this your email address?</h3>
-                <p class="emailAddress">yolo@life.com<a href="#" class="default editEmailAddress white" name="http://localhost/~big&amp;i/Sky/movies-oneclick-upgrades-prototype/#" onclick="s_objectID=&quot;http://localhost/~big&amp;i/Sky/movies-oneclick-upgrades-prototype/#_2&quot;;return this.s_oc?this.s_oc(e):true">Edit</a></p>
+                <p class="emailAddress">yolo@life.com<a href="#" id="edit_email" class="default editEmailAddress white" name="http://localhost/~big&amp;i/Sky/movies-oneclick-upgrades-prototype/#" onclick="s_objectID=&quot;http://localhost/~big&amp;i/Sky/movies-oneclick-upgrades-prototype/#_2&quot;;return this.s_oc?this.s_oc(e):true">Edit</a></p>
                 <input id="editEmail" class="editEmail" type="email">
                 <div class="clearfix"></div>
-                <a class="topAccordian white underline">Sky's privacy &amp; opt out</a>
-                  <div class="bottomAccordian">
+                <a id="privacy_link" class="topAccordian white underline">Sky's privacy &amp; opt out</a>
+                  <div id="privacy_copy" class="bottomAccordian">
                     <p class="disclaimer">Sky may use information about you, including the shows and channels you watch, to help us improve the services we offer and to provide you with personalised services. These include programme recommendations and tailored advertising. This involves storing information about you on your devices, for example to make some of the adverts you see more relevant to you. If you opt out you will still see the same number of adverts but they will be ones that appear as standard. Sky may also use your information to contact you about products and services that we think you`d like.</p>
                     <p class="disclaimer">By continuing, you are agreeing to this unless you opt out.</p>
-                    <form>
+                    <form class="privacy_form">
                       <input type="checkbox"><label class="supportive">I do not wish to receive marketing from Sky by telephone</label>
                       <input type="checkbox"><label class="supportive">I do not wish to receive marketing from Sky by email</label>
                       <input type="checkbox"><label class="supportive">I do not wish to receive marketing from Sky by post</label>
@@ -215,9 +216,14 @@
                 <form>
                   <input type="checkbox" id="tandc" value="agree">
                   <label id="tandclabel" class="supportive">I have read and agree to Sky's terms &amp; conditions</label>
-                  <button type="submit" class="placeOrder buttonPricePoint btn primary">Order</button>
+                  <button type="submit" id="place_order" class="placeOrder buttonPricePoint btn primary">Order</button>
                 </form>
               </div>
+            </div>
+            <div id="success-content">
+              <h2>Thank you</h2>
+              <h3>We’ll email you confirmation shortly.</h3>
+              <p>Sky Movies should be available to you in a few minutes – please contact us if you can’t see it after 24 hours. Payment will be taken using your usual method. Enjoy your updated package.</p>
             </div>
         </div>
       </div>
@@ -241,6 +247,7 @@
     </section>
 
     <script src="scripts/markup-displayer.js"></script>
+    <script src="scripts/movie-upgrade.js"></script>
 
   </body>
 
