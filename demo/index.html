@@ -8,22 +8,11 @@
     <link rel="stylesheet" type="text/css" href="styles/demo.css" />
     <link rel="stylesheet" type="text/css" href="styles/panel.css" />
     <link rel="stylesheet" type="text/css" href="styles/tile.css" />
+    <link rel="stylesheet" type="text/css" href="styles/upgrade-widget.css" />
   </head>
 
   <body>
     <div class="container">
-      <h1>Polaris Tiles <span class="version">(0.1.1)</span></h1>
-
-      <h2>Getting Started</h2>
-
-      <ul class="installation-instructions">
-        <li>Install the repo via NPM <code>npm install --save-dev git+ssh://git@github.com/skyglobal/tiles.git</code></li>
-        <li>Import the Tile SCSS into your SCSS using <code>import '../node_modules/tiles/src/tile';</code></li>
-        <li>Get the markup for the required tile by clicking it and copying the generated markup from the console.</li>
-        <li>The polaris tiles have 3 breakpoints; Tablet &lt;1024, Mobile &lt;640. Font sizes change at each breakpoint.</li>
-        <li>Use the grid system of your choice to control the width of the tiles. A basic grid system is used for demo purposes only.</li>
-        <li><b>Note:</b> This is only intended as a first step to share styles to meet Technology deadlines. A more comprehensive toolkit will replace this repo.</li>
-      </ul>
 
       <h2>Account Tiles</h2>
       <section class="clearfix">
@@ -73,54 +62,6 @@
             </section>
           </div>
         </div>
-        <div class="tile-container grid-4">
-          <div class="tile small type-channel in-view">
-            <div class="tile-inner">
-              <a class="tile-link sky-movies-channel-promo" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="https://dm8eklel4s62k.cloudfront.net/images/small/sky-movies-channel-promo-3f43b3e.jpg">
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h2 class="tile-title">Sky Movies</h2>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-        <div class="tile-container grid-4">
-          <div class="tile small type-channel in-view">
-            <div class="tile-inner">
-              <a class="tile-link sky-news-channel-promo" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="https://dm8eklel4s62k.cloudfront.net/images/small/sky-news-tile-ca03f84.jpg">
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h2 class="tile-title">Sky News</h2>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
       </section>
 
       <h2>Content Tiles</h2>
@@ -157,244 +98,10 @@
             </section>
           </div>
         </div>
-
-        <div class="tile-container grid-4">
-          <div class="tile small type-content sky-atlantic in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
-                  <div class="tile-media-logo-channel"></div>
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">Sky Atlantic</h3>
-                  </div>
-                </div>
-                <span class="access-hide">- click to open detail panel</span>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-
-        <div class="tile-container grid-4">
-          <div class="tile small type-content sky-arts in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
-                  <div class="tile-media-logo-channel"></div>
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">Sky Arts</h3>
-                  </div>
-                </div>
-                <span class="access-hide">- click to open detail panel</span>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-
-        <div class="tile-container grid-4">
-          <div class="tile small type-content sky-living in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
-                  <div class="tile-media-logo-channel"></div>
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">Sky Living</h3>
-                  </div>
-                </div>
-                <span class="access-hide">- click to open detail panel</span>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-
-        <div class="tile-container grid-4">
-          <div class="tile small type-content sky-movies in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
-                  <div class="tile-media-logo-channel"></div>
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">Sky Movies</h3>
-                  </div>
-                </div>
-                <span class="access-hide">- click to open detail panel</span>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-
-        <div class="tile-container grid-4">
-          <div class="tile small type-content sky-news in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
-                  <div class="tile-media-logo-channel"></div>
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">Sky News</h3>
-                  </div>
-                </div>
-                <span class="access-hide">- click to open detail panel</span>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-
-        <div class="tile-container grid-4">
-          <div class="tile small type-content sky-sports in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="//dm8eklel4s62k.cloudfront.net/images/medium/you-me-and-the-apocalypse-key-art-16x9-61fb268.jpg" alt="">
-                  <div class="tile-media-logo-channel"></div>
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">Sky Sports</h3>
-                  </div>
-                </div>
-                <span class="access-hide">- click to open detail panel</span>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
       </section>
 
       <h2>Link Tiles</h2>
       <section class="clearfix">
-        <div class="tile-container grid-6">
-          <div class="tile medium type-link theme-text-with-background in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="images/catch-up-tv.jpg" alt="" />
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">With background</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-
-        <div class="tile-container grid-6">
-          <div class="tile medium type-link theme-light in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="images/sky-movies-promo.jpg" alt="">
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">Without background</h3>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-
-        <div class="tile-container grid-6">
-          <div class="tile medium type-link theme-text-with-background in-view">
-            <div class="tile-inner">
-              <a class="tile-link" href="#">
-                <div class="tile-bg">
-                  <div class="tile-bg-default"></div>
-                  <div class="tile-bg-active"></div>
-                </div>
-                <div class="tile-media">
-                  <img class="tile-media-bg" src="images/catch-up-tv.jpg" alt="" />
-                </div>
-                <div class="tile-content">
-                  <div class="tile-content-inner">
-                    <h3 class="tile-title">With background and Terms and Conditions</h3>
-                  </div>
-                  <span class="tile-legal">Compatible box required. T&amp;Cs apply.</span>
-                </div>
-              </a>
-            </div>
-            <section>
-              <div class="shine top"></div>
-              <div class="shine bottom"></div>
-            </section>
-          </div>
-        </div>
-
         <div class="tile-container grid-4">
           <div class="tile small type-link theme-text-with-background in-view">
             <div class="tile-inner">
@@ -421,17 +128,12 @@
           </div>
         </div>
       </section>
-
-      <h3>Please note that anything below this line is only in this repository temporarily until a finalised solution is available.</h3>
-
-      <h2>Panel</h2>
-
     </div>
 
     <section class="panel tween open fx">
       <a href="#" class="panel-anchor">
         <span class="panel-anchor-access-hide">
-          You, Me And The Apocalypse overview</span>
+          Offer Template</span>
         </span>
       </a>
       <div class="panel-inner">
@@ -441,7 +143,7 @@
           </div>
         </div>
         <div class="panel-content">
-          <h2>Some panel content</h2>
+          <h2>Terms&amp;Conditions</h2>
           <ul>
             <p>Add closed style to root panel element when closed, open when open and closing when close animation is running.</p>
             <p>The close button icon comes from skycons and details of how to include can be <a href="">found here</a></p>
@@ -450,7 +152,102 @@
       </div>
     </section>
 
+    <div class="spacing"></div>
+
+    <section class="panel tween open fx ">
+      <a href="#" class="panel-anchor">
+        <span class="panel-anchor-access-hide">
+          Confirmation Template</span>
+        </span>
+      </a>
+      <div class="panel-inner">
+        <div class="panel-header">
+          <div class="panel-header-inner">
+            <a class="panel-close close" href="#"></a>
+          </div>
+        </div>
+        <div id="loader" class="loader"></div>
+        <div class="panel-content">
+          <div class="skycom_container clearfix">
+            <div id="order-content" class="order-content">
+              <div class="content-container skycom-6">
+                <h2>Add Sky Movies</h2>
+                <p>Have an entertaining christmas</p>
+                <div class="pricePod">
+                  <p class="price clearfix ">
+                    <span class="newprice">
+                      £17<sup>00</sup>
+                    </span>
+                    <span class="frequency">extra a month</span>
+                    <span class="supportive clearfix"></span>
+                    <span class="supportive clearfix"></span>
+                  </p>
+                </div>
+                <p>Your new monthly total is</p>
+                <div class="pricePod">
+                  <p class="price clearfix ">
+                    <span class="newprice">
+                      £38<sup>80</sup>
+                    </span>
+                    <span class="frequency"></span>
+                    <span class="supportive clearfix"></span>
+                    <span class="supportive clearfix"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="content-container skycom-6">
+                <h3>Is this your email address?</h3>
+                <p class="emailAddress">yolo@life.com<a href="#" id="edit_email" class="default editEmailAddress white" name="http://localhost/~big&amp;i/Sky/movies-oneclick-upgrades-prototype/#" onclick="s_objectID=&quot;http://localhost/~big&amp;i/Sky/movies-oneclick-upgrades-prototype/#_2&quot;;return this.s_oc?this.s_oc(e):true">Edit</a></p>
+                <input id="editEmail" class="editEmail" type="email"></input>
+                <div class="clearfix"></div>
+                <a id="privacy_link" class="topAccordian white underline">Sky's privacy &amp; opt out</a>
+                  <div id="privacy_copy" class="bottomAccordian">
+                    <p class="disclaimer">Sky may use information about you, including the shows and channels you watch, to help us improve the services we offer and to provide you with personalised services. These include programme recommendations and tailored advertising. This involves storing information about you on your devices, for example to make some of the adverts you see more relevant to you. If you opt out you will still see the same number of adverts but they will be ones that appear as standard. Sky may also use your information to contact you about products and services that we think you`d like.</p>
+                    <p class="disclaimer">By continuing, you are agreeing to this unless you opt out.</p>
+                    <form class="privacy_form">
+                      <input type="checkbox"><label class="supportive">I do not wish to receive marketing from Sky by telephone</label>
+                      <input type="checkbox"><label class="supportive">I do not wish to receive marketing from Sky by email</label>
+                      <input type="checkbox"><label class="supportive">I do not wish to receive marketing from Sky by post</label>
+                      <input type="checkbox"><label class="supportive">I do not wish to receive personalised services</label>
+                    </form>
+                  </div>
+                <h3>Terms &amp; Conditions</h3>
+                <p class="disclaimer">Tick the box to confirm you have read and agree to Sky's Terms &amp; conditions and Sky's Privacy &amp; Cookies Notice. Clicking 'Pay Now' will submit your order for Sky with the products you've chosen. We'll email you to confirm receipt and the next steps to complete your order. You agree your services may start during the cooling off period. You may still cancel but you will need to pay for any services used and any costs incurred up to that point. Prices and services may vary. We will let you know about any material changes before we make them.</p>
+                <form>
+                  <input type="checkbox" id="tandc" value="agree">
+                  <label id="tandclabel" class="supportive">I have read and agree to Sky's terms &amp; conditions</label>
+                  <button type="submit" id="place_order" class="placeOrder buttonPricePoint btn primary">Order</button>
+                </form>
+              </div>
+            </div>
+            <div id="success-content">
+              <h2>Thank you</h2>
+              <h3>We’ll email you confirmation shortly.</h3>
+              <p>Sky Movies should be available to you in a few minutes – please contact us if you can’t see it after 24 hours. Payment will be taken using your usual method. Enjoy your updated package.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="spacing"></div>
+
+    <section class="panel tween open fx offer-template">
+      <a href="#" class="panel-anchor">
+        <span class="panel-anchor-access-hide">
+          Confirmation Template</span>
+        </span>
+      </a>
+      <div class="panel-inner">
+        <div class="panel-header">
+          <div class="panel-header-inner">
+            <a class="panel-close close" href="#"></a>
+          </div>
+        </div>
+        <div class="panel-content" data-reactid=".xo12m65a0w.1.1.1.1"><div class="panel-offer" data-reactid=".xo12m65a0w.1.1.1.1.0"><div class="column-4" data-reactid=".xo12m65a0w.1.1.1.1.0.0"><img src="https://dm8eklel4s62k.cloudfront.net/images/medium/catch-up-tv-6b92c87.jpg" alt="offer" data-reactid=".xo12m65a0w.1.1.1.1.0.0.0"></div><div class="column-3" data-reactid=".xo12m65a0w.1.1.1.1.0.1"><h2 class="panel-offer-title" data-reactid=".xo12m65a0w.1.1.1.1.0.1.0">Come back to Sky and get 35% off any TV bundle plus a £100 credit</h2></div><div class="column-5" data-reactid=".xo12m65a0w.1.1.1.1.0.2"><p class="panel-offer-description" data-reactid=".xo12m65a0w.1.1.1.1.0.2.0">If you've left Sky TV in the past 12 months and are thinking of returning, we'd love to have you back. Whatever your reasons for leaving us last time around, we may have an exclusive TV bundle offer for you. Claim your offer online here.</p><p class="panel-offer-terms" data-reactid=".xo12m65a0w.1.1.1.1.0.2.1"><b>Terms &amp; Conditions:</b> UK residential customers only, if you have an outstanding balance on your Sky account, all you have to do is clear this amount. It's simple to do this over the phone using your credit or debit card when you come back. Payments cannot be made via an online LiveChat</p><div class="rejoin-sky" data-reactid=".xo12m65a0w.1.1.1.1.0.2.2">Rejoin Sky</div></div></div><div class="panel-offer-footer" data-reactid=".xo12m65a0w.1.1.1.1.1"><b>Call Charges&gt;</b><br>Calls to service numbers (starting 084, 087, 09 and 118) consist of an access charge from Sky and a service charge from the company you called. The access charge for non-inclusive calls made from your Sky Talk landline is 9.5p per minute (effective from 01 July 2015).</div></div>      </div>
+    </section>
+
     <script src="scripts/markup-displayer.js"></script>
+    <script src="scripts/movie-upgrade.js"></script>
 
   </body>
 
