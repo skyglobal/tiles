@@ -1,12 +1,12 @@
 {
   "name": "tiles",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Initial styles for polaris tiles. Not intended for use long term",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skyglobal/tiles.git"
   },
-  "author": "David Nicholson",
+  "author": "David Nicholson, Aleksander Switalski",
   "license": "ISC",
   "scripts": {
     "update-demo-page": "echo '----\nAutomatically updating demo page with staged changes\n----' && git stash --keep-index; gulp sass && git add ./demo/; RESULT=$?; git stash pop; [ $RESULT -ne 0 ] && exit 1; exit 0"
@@ -15,7 +15,7 @@
     "update-demo-page"
   ],
   "dependencies": {
-    "gradients": "git+ssh://git@github.com/skyglobal/gradients.git#v0.1.6",
+    "gradients": "git+ssh://git@github.com/skyglobal/gradients.git#v0.1.8",
     "polaris-global": "git+ssh://git@github.com/skyglobal/polaris-global.git"
   },
   "devDependencies": {
