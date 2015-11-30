@@ -172,15 +172,15 @@
     background-size: contain;
 
     &[src*=sky-box-sets] {
-      max-height: 40px;
+      max-height: 35px;
       min-height: 25px;
-      height: 12.5%;
+      height: 15%;
     }
 
     &[src*=Sky-Store] {
-      max-height: 40px;
+      max-height: 35px;
       min-height: 25px;
-      height: 12.5%;
+      height: 15%;
     }
   }
 
