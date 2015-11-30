@@ -103,6 +103,16 @@
     }
   }
 
+  &.sky-store {
+    .tile-media-logo-channel {
+      @include logo-sky-store;
+    }
+
+    .tile-bg-active {
+      @extend .polaris-bg-sky-store;
+    }
+  }
+
   .tile-bg {
     position: absolute;
     top: 50%;

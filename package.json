@@ -1,6 +1,6 @@
 {
   "name": "tiles",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Initial styles for polaris tiles. Not intended for use long term",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   ],
   "dependencies": {
     "gradients": "git+ssh://git@github.com/skyglobal/gradients.git#v0.1.8",
-    "polaris-global": "git+ssh://git@github.com/skyglobal/polaris-global.git"
+    "polaris-global": "git+ssh://git@github.com/skyglobal/polaris-global.git#0.0.2"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
