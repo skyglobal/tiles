@@ -856,9 +856,13 @@
   background-repeat: no-repeat;
   background-size: contain; }
   .tile.type-content .tile-media-logo-channel[src*=sky-box-sets] {
-    max-height: 30px;
-    min-height: 22px;
-    height: 12.5%; }
+    max-height: 35px;
+    min-height: 25px;
+    height: 15%; }
+  .tile.type-content .tile-media-logo-channel[src*=Sky-Store] {
+    max-height: 35px;
+    min-height: 25px;
+    height: 15%; }
 
 .tile.type-content .tile-content {
   padding-bottom: 43.75%; }
