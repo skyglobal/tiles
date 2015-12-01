@@ -171,16 +171,11 @@
     background-repeat: no-repeat;
     background-size: contain;
 
-    &[src*=sky-box-sets] {
-      max-height: 35px;
-      min-height: 25px;
-      height: 15%;
-    }
-
+    &[src*=sky-box-sets],
     &[src*=Sky-Store] {
-      max-height: 35px;
+      max-height: 30px;
       min-height: 25px;
-      height: 15%;
+      height: 12.5%;
     }
   }
 
