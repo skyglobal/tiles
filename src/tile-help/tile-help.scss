@@ -1,0 +1,66 @@
+@import '~polaris-global/globals/colours';
+@import '~polaris-global/globals/constants';
+@import '~polaris-global/globals/responsive';
+
+@function desktop-font($multiplier) {
+  @return ($multiplier / $desktop) * 100vw;
+}
+
+$grey: #e1e0e4;
+
+.tile.type-help {
+
+  &.medium {
+
+    .tile-content {
+      height: 33vw;
+
+      @include tablet {
+        height: 40.4vw;
+      }
+
+      @include mobile {
+        height: 80vw;
+      }
+    }
+
+    .tile-details {
+      line-height: 2vw;
+
+      @include mobile {
+        line-height: 4.5vw;
+      }
+    }
+  }
+
+  .tile-content {
+
+    background-image: radial-gradient($white, $grey);
+
+    height: 22vw;
+    color: $black;
+
+    @include tablet {
+      height: 40.5vw;
+    }
+
+    @include mobile {
+      height: 80vw;
+    }
+
+    .tile-title {
+      color: $black;
+      padding-top: 1vw;
+      padding-bottom: 2vw;
+    }
+  }
+
+  .tile-details {
+    color: $black;
+    line-height: 1.6vw;
+
+    @include mobile {
+      line-height: 4.5vw;
+    }
+  }
+}
