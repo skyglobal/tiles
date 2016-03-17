@@ -6,6 +6,17 @@
 
 @import '../tile-sponsor/tile-sponsor';
 
+main[data-channel=sky-kids],
+    .tile.type-content[data-link-to=sky-kids] {
+      .tile-media-logo-channel {
+        @include logo-sky-kids;
+      }
+
+      .tile-bg-active {
+        @extend .polaris-bg-sky-kids;
+      }
+}
+
 .tile.type-content {
   &:hover,
   &:focus,
