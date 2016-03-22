@@ -287,6 +287,13 @@
   background-image: -webkit-radial-gradient(#0E429E, #003366);
   background-image: radial-gradient(#0E429E, #003366); }
 
+.polaris-bg-sky-kids, main[data-channel=sky-kids] .tile-bg-active,
+.tile.type-content[data-link-to=sky-kids] .tile-bg-active {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8cmFkaWFsR3JhZGllbnQgaWQ9Imc5ODMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNjUyRDlGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjNEIwMDdFIiBvZmZzZXQ9IjEiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2c5ODMpIiAvPgo8L3N2Zz4=);
+  background-color: #4B007E;
+  background-image: -webkit-radial-gradient(#652D9F, #4B007E);
+  background-image: radial-gradient(#652D9F, #4B007E); }
+
 .polaris-bg-section {
   background: white;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZTVlNWVhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZTVlNWVhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzElIiBzdG9wLWNvbG9yPSIjYzljN2QxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -443,6 +450,13 @@
   background-color: #003366;
   background-image: -webkit-radial-gradient(#0E429E, #003366);
   background-image: radial-gradient(#0E429E, #003366); }
+
+.polaris-bg-sky-kids, main[data-channel=sky-kids] .tile-bg-active,
+.tile.type-content[data-link-to=sky-kids] .tile-bg-active {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8cmFkaWFsR3JhZGllbnQgaWQ9Imc5ODMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNjUyRDlGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjNEIwMDdFIiBvZmZzZXQ9IjEiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2c5ODMpIiAvPgo8L3N2Zz4=);
+  background-color: #4B007E;
+  background-image: -webkit-radial-gradient(#652D9F, #4B007E);
+  background-image: radial-gradient(#652D9F, #4B007E); }
 
 .polaris-bg-section {
   background: white;
@@ -614,6 +628,13 @@
   background-image: -webkit-radial-gradient(#0E429E, #003366);
   background-image: radial-gradient(#0E429E, #003366); }
 
+.polaris-bg-sky-kids, main[data-channel=sky-kids] .tile-bg-active,
+.tile.type-content[data-link-to=sky-kids] .tile-bg-active {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8cmFkaWFsR3JhZGllbnQgaWQ9Imc5ODMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNjUyRDlGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjNEIwMDdFIiBvZmZzZXQ9IjEiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2c5ODMpIiAvPgo8L3N2Zz4=);
+  background-color: #4B007E;
+  background-image: -webkit-radial-gradient(#652D9F, #4B007E);
+  background-image: radial-gradient(#652D9F, #4B007E); }
+
 .polaris-bg-section {
   background: white;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMzAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZTVlNWVhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTYlIiBzdG9wLWNvbG9yPSIjZTVlNWVhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzElIiBzdG9wLWNvbG9yPSIjYzljN2QxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -776,6 +797,10 @@
   transition: color 0.4s ease; }
   .tile-sponsor:hover .sponsor-label {
     text-decoration: underline; }
+
+main[data-channel=sky-kids] .tile-media-logo-channel,
+.tile.type-content[data-link-to=sky-kids] .tile-media-logo-channel {
+  background: url("https://dm8eklel4s62k.cloudfront.net/images/sky/small/sky-kids-logo-small-17032016.png"); }
 
 .tile.type-content:hover .tile-inner .tile-bg-active, .tile.type-content:focus .tile-inner .tile-bg-active, .tile.type-content.has-focus .tile-inner .tile-bg-active {
   opacity: 1; }
@@ -981,6 +1006,13 @@
   background-color: #003366;
   background-image: -webkit-radial-gradient(#0E429E, #003366);
   background-image: radial-gradient(#0E429E, #003366); }
+
+.polaris-bg-sky-kids, main[data-channel=sky-kids] .tile-bg-active,
+.tile.type-content[data-link-to=sky-kids] .tile-bg-active {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8cmFkaWFsR3JhZGllbnQgaWQ9Imc5ODMiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjeD0iNTAlIiBjeT0iNTAlIiByPSI1MCUiPgo8c3RvcCBzdG9wLWNvbG9yPSIjNjUyRDlGIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjNEIwMDdFIiBvZmZzZXQ9IjEiLz4KPC9yYWRpYWxHcmFkaWVudD4KPHJlY3QgeD0iLTUwIiB5PSItNTAiIHdpZHRoPSIxMDEiIGhlaWdodD0iMTAxIiBmaWxsPSJ1cmwoI2c5ODMpIiAvPgo8L3N2Zz4=);
+  background-color: #4B007E;
+  background-image: -webkit-radial-gradient(#652D9F, #4B007E);
+  background-image: radial-gradient(#652D9F, #4B007E); }
 
 .polaris-bg-section {
   background: white;
