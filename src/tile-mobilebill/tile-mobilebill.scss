@@ -1,0 +1,70 @@
+@import '~gradients/src/styles/gradients';
+@import '~polaris-global/globals/colours';
+@import '~polaris-global/globals/constants';
+@import '~polaris-global/globals/responsive';
+
+@function desktop-font($multiplier) {
+  @return ($multiplier / $desktop) * 100vw;
+}
+
+.tile.type-mobilebill {
+
+  .tile-link {
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &:hover {
+    .tile-title {
+      text-decoration: none;
+    }
+
+    .tile-details {
+      text-decoration: underline;
+    }
+  }
+
+  .tile-content {
+    padding-bottom: 99.99%;
+    @extend .polaris-bg-sky-account;
+  }
+
+  .tile-content-inner {
+    text-decoration: none;
+  }
+
+  &.small {
+    .tile-title {
+      color: $white;
+      font-size: desktop-font(61);
+      padding: 1vw 0 2vw;
+
+      @include tablet {
+        font-size: desktop-font(95);
+        padding-bottom: 3.5vw;
+      }
+
+      @include mobile {
+        font-size: desktop-font(244);
+        padding-bottom: 5vw;
+      }
+    }
+
+    .tile-details {
+      color: $white;
+      font-size: desktop-font(26);
+      line-height: 1.2em;
+
+      @include tablet {
+        font-size: desktop-font(50);
+      }
+
+      @include mobile {
+        font-size: desktop-font(114);
+      }
+    }
+  }
+}
