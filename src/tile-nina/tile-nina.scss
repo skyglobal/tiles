@@ -1,0 +1,65 @@
+@import '~polaris-global/globals/colours';
+@import '~polaris-global/globals/responsive';
+
+@function desktop-font($multiplier) {
+  @return ($multiplier / $desktop) * 100vw;
+}
+
+.tile.type-nina {
+  .tile-bg {
+    top: 0;
+  }
+
+  .tile-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .tile-content {
+    margin-top: 49.25%;
+    margin-bottom: 7%;
+  }
+
+  .tile-content-inner {
+    text-align: center;
+  }
+
+  .tile-nina-button {
+    font-weight: bold;
+    margin: 10% auto 0;
+    display: inline-block;
+    padding: .5em 1em;
+    border: 2px solid $sky-blue;
+    border-radius: 4px;
+    color: $sky-blue;
+    font-size: 20px;
+  }
+
+  &:hover .tile-nina-button {
+    color: $white;
+    background-color: $sky-blue;
+  }
+
+  &.small {
+    .tile-title,
+    .tile-details {
+      font-size: desktop-font(26);
+      line-height: 1.2em;
+
+      @include tablet {
+        font-size: desktop-font(50);
+      }
+
+      @include mobile {
+        font-size: desktop-font(114);
+      }
+    }
+  }
+}
