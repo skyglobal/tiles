@@ -34,11 +34,9 @@ $grey: #e1e0e4;
   }
 
   .tile-content {
-
     background-image: radial-gradient($white, $grey);
-
-    height: 22vw;
     color: $black;
+    height: 22vw;
 
     @include tablet {
       height: 40.5vw;
@@ -50,8 +48,8 @@ $grey: #e1e0e4;
 
     .tile-title {
       color: $black;
-      padding-top: 1vw;
       padding-bottom: 2vw;
+      padding-top: 1vw;
     }
   }
 
@@ -63,4 +61,73 @@ $grey: #e1e0e4;
       line-height: 4.5vw;
     }
   }
+}
+
+.tile.type-text[data-content=search] {
+
+  @include tablet {
+    // scss-lint:disable ImportantRule
+    width: 100% !important;
+  }
+
+  .tile-text {
+
+    .tile-content {
+
+      @include mobile {
+        height: 22vw;
+      }
+
+      @include tablet {
+        height: 22vw;
+      }
+    }
+
+    .tile-title {
+      color: $mid-grey;
+
+      @include mobile {
+        font-size: 1.1rem;
+      }
+
+      @include tablet {
+        font-size: 1.8rem;
+      }
+    }
+
+    .tile-details {
+      color: $mid-grey;
+
+      @include mobile {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+      }
+
+      @include tablet {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+}
+
+.action-tile.tile.type-text[data-content=search] .tile-text {
+
+  .tile-title {
+    font-size: 1.4rem;
+
+    @include mobile {
+      font-size: 1.1rem;
+      width: 70%;
+    }
+
+    @include tablet {
+      font-size: 1.8rem;
+      width: 70%;
+    }
+
+  }
+
 }

@@ -7,14 +7,14 @@
 @import '../tile-sponsor/tile-sponsor';
 
 main[data-channel=sky-kids],
-    .tile.type-content[data-link-to=sky-kids] {
-      .tile-media-logo-channel {
-        @include logo-sky-kids;
-      }
+  .tile.type-content[data-link-to=sky-kids] {
+    .tile-media-logo-channel {
+      @include logo-sky-kids;
+    }
 
-      .tile-bg-active {
-        @extend .polaris-bg-sky-kids;
-      }
+    .tile-bg-active {
+      @extend .polaris-bg-sky-kids;
+    }
 }
 
 .tile.type-content {
@@ -155,8 +155,8 @@ main[data-channel=sky-kids],
     &.small,
     &.medium {
       .tile-media-logo-channel {
-        left: 3vw;
         bottom: 3vw;
+        left: 3vw;
       }
     }
   }
@@ -174,19 +174,19 @@ main[data-channel=sky-kids],
   }
 
   .tile-media-logo-channel {
-    position: absolute;
-    left: 1.5vw;
-    bottom: 1.5vw;
-    height: 20px;
-    width: 200px;
     background-repeat: no-repeat;
     background-size: contain;
+    bottom: 1.5vw;
+    height: 20px;
+    left: 1.5vw;
+    position: absolute;
+    width: 200px;
 
     &[src*=sky-box-sets],
     &[src*=Sky-Store] {
+      height: 12.5%;
       max-height: 30px;
       min-height: 25px;
-      height: 12.5%;
     }
   }
 
@@ -195,11 +195,49 @@ main[data-channel=sky-kids],
   }
 
   .tile-title {
-    margin-bottom: .25em;
     @include transition(color $short-transition ease);
+    margin-bottom: .25em;
   }
 
   .tile-details {
     @include transition(color $short-transition ease);
+  }
+}
+
+.tile.type-content[data-content=search],
+.watch-only-tiles > .tile-container > .tile.type-content {
+
+  .tile-inner {
+
+    @include mobile {
+      height: 22vw;
+    }
+  }
+
+  .tile-link {
+
+    @include mobile {
+
+      .tile-media {
+        float: right;
+        width: 155px;
+      }
+
+      .tile-content {
+        height: 88px;
+        margin-right: 155px;
+      }
+
+      .tile-title {
+        font-size: 4.6vw;
+      }
+
+      .tile-bg {
+        // scss-lint:disable ImportantRule
+        height: 88px;
+        top: 0 !important;
+      }
+    }
+
   }
 }
