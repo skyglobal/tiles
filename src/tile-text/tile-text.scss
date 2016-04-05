@@ -66,8 +66,7 @@ $grey: #e1e0e4;
 .tile.type-text[data-content=search] {
 
   @include tablet {
-    // scss-lint:disable ImportantRule
-    width: 100% !important;
+    width: 100%;
   }
 
   .tile-text {

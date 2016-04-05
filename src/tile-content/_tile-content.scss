@@ -233,9 +233,8 @@ main[data-channel=sky-kids],
       }
 
       .tile-bg {
-        // scss-lint:disable ImportantRule
         height: 88px;
-        top: 0 !important;
+        top: 0;
       }
     }
 
