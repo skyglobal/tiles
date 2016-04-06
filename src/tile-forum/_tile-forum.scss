@@ -1,0 +1,67 @@
+@import '~polaris-global/globals/colours';
+@import '~polaris-global/globals/constants';
+@import '~polaris-global/globals/responsive';
+
+@function desktop-font($multiplier) {
+  @return ($multiplier / $desktop) * 100vw;
+}
+
+$grey: #e1e0e4;
+
+.tile.type-forum {
+
+  &:hover {
+
+    .tile-link-text {
+      text-decoration: underline;
+    }
+  }
+
+  &.medium {
+
+    .tile-content {
+      height: 33vw;
+
+      @include tablet {
+        height: 40.4vw;
+      }
+    }
+  }
+
+  .tile-content {
+    background-image: radial-gradient($white, $grey);
+    color: $black;
+    height: 23vw;
+
+    .tile-title {
+      color: $mid-grey;
+      padding-top: 1vw;
+
+      @include tablet {
+        font-size: 1.8rem;
+        width: 70%;
+      }
+    }
+
+    .tile-link-text {
+      color: $sky-blue;
+      font-size: 18px;
+      line-height: 24px;
+
+      @include mobile {
+        font-size: 16px;
+        line-height: 0;
+      }
+
+      @include tablet {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .tile-details {
+    color: $black;
+    line-height: 1.6vw;
+  }
+
+}
