@@ -12,7 +12,8 @@
   .tile-link {
     outline: none;
     color: white;
-
+    position: absolute;
+    bottom: 10px;
     &:focus {
       outline: none;
     }
@@ -39,6 +40,8 @@
     font-size: 2em;
     p {
         margin-top: 0;
+        line-height: 2em;
+        font-size: 0.8em;
     }
   }
 
