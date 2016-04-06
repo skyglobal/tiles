@@ -36,16 +36,55 @@
     }
 
     .tile-content {
-      position: absolute;
-      width: 100%;
       bottom: 0;
       padding-bottom: 43.75%;
+      position: absolute;
+      width: 100%;
     }
 
     .tile-title {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+    }
+  }
+}
+
+.tile.type-link[data-content=search] {
+
+  .tile-inner {
+
+    @include mobile {
+      height: 22vw;
+    }
+  }
+
+  .tile-link {
+
+    @include mobile {
+
+      .tile-media {
+        float: right;
+        width: 155px;
+      }
+
+      .tile-content {
+        height: 88px;
+        margin-right: 155px;
+      }
+
+      .tile-title {
+        font-size: 1.1rem;
+      }
+
+      .tile-bg {
+        height: 88px;
+        top: 0;
+      }
+    }
+
+    .tile-title {
+      color: $mid-grey;
     }
   }
 }
