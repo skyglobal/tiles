@@ -50,6 +50,7 @@
   }
 }
 
+
 .tile.type-link[data-content=search] {
 
   .tile-inner {
@@ -60,6 +61,10 @@
   }
 
   .tile-link {
+
+    .tile-title {
+      color: $mid-grey;
+    }
 
     @include mobile {
 
@@ -78,13 +83,25 @@
       }
 
       .tile-bg {
-        height: 88px;
         top: 0;
       }
     }
 
-    .tile-title {
-      color: $mid-grey;
+    @include tablet {
+
+      .tile-media {
+        float: right;
+        width: 35%;
+      }
+
+      .tile-content {
+        height: 18vw;
+        width: 65%;
+      }
+
+      .tile-title {
+        font-size: 1.4rem;
+      }
     }
   }
 }

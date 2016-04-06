@@ -11,7 +11,6 @@ $grey: #e1e0e4;
 .tile.type-forum {
 
   &:hover {
-
     .tile-link-text {
       text-decoration: underline;
     }
@@ -25,6 +24,7 @@ $grey: #e1e0e4;
       @include tablet {
         height: 40.4vw;
       }
+
     }
   }
 
@@ -36,11 +36,6 @@ $grey: #e1e0e4;
     .tile-title {
       color: $mid-grey;
       padding-top: 1vw;
-
-      @include tablet {
-        font-size: 1.8rem;
-        width: 70%;
-      }
     }
 
     .tile-link-text {
@@ -54,14 +49,33 @@ $grey: #e1e0e4;
       }
 
       @include tablet {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
+
     }
+
   }
 
   .tile-details {
     color: $black;
     line-height: 1.6vw;
+  }
+
+  @include tablet {
+
+    .tile-media {
+      float: right;
+      width: 35%;
+    }
+
+    .tile-content {
+      height: 17vw;
+      width: 65%;
+    }
+
+    .tile-title {
+      font-size: 1.4rem;
+    }
   }
 
 }
