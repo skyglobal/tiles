@@ -11,7 +11,7 @@
 
   .tile-link {
     outline: none;
-    color: white;
+    color: $white;
     position: absolute;
     bottom: 10px;
     font-size: 1.97368vw;
@@ -37,7 +37,7 @@
 
   .tile-content-inner {
     text-decoration: none;
-    color: #fff;
+    color: $white;
     p {
         margin-top: 0;
         line-height: 2em;
