@@ -795,6 +795,14 @@
   .tile-sponsor:hover .sponsor-label {
     text-decoration: underline; }
 
+.tile.type-content .tile-bg-active {
+  -webkit-transition: opacity 0.6s ease;
+  -moz-transition: opacity 0.6s ease;
+  -ms-transition: opacity 0.6s ease;
+  -o-transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
+  opacity: 0; }
+
 .tile.type-content:hover .tile-inner .tile-bg-active, .tile.type-content:focus .tile-inner .tile-bg-active, .tile.type-content.has-focus .tile-inner .tile-bg-active {
   opacity: 1; }
 
@@ -890,7 +898,8 @@
   -ms-transition: color 0.4s ease;
   -o-transition: color 0.4s ease;
   transition: color 0.4s ease;
-  margin-bottom: .25em; }
+  margin-bottom: .25em;
+  color: #222222; }
 
 .tile.type-content .tile-details {
   -webkit-transition: color 0.4s ease;

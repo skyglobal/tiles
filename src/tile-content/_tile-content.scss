@@ -7,6 +7,16 @@
 @import '../tile-sponsor/tile-sponsor';
 
 .tile.type-content {
+
+  .tile-bg-default {
+    @extend .polaris-bg-default;
+  }
+
+  .tile-bg-active {
+    @include transition(opacity $med-transition ease);
+    opacity: 0;
+  }
+
   &:hover,
   &:focus,
   &.has-focus {
@@ -196,6 +206,7 @@
   .tile-title {
     @include transition(color $short-transition ease);
     margin-bottom: .25em;
+    color: $dark-grey;
   }
 
   .tile-details {
