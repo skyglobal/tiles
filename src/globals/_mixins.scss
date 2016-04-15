@@ -1,0 +1,11 @@
+@mixin page-background-gradient($info) {
+  background-color: nth(nth($info, 2), length(nth($info, 2)));
+  background-image: -webkit-linear-gradient(nth($info, 1), nth($info, 2));
+  background-image: linear-gradient(nth($info, 1), nth($info, 2));
+}
+
+@mixin mobile {
+  @media (max-width: 650px) {
+    @content;
+  }
+}

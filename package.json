@@ -15,7 +15,6 @@
     "update-demo-page"
   ],
   "dependencies": {
-    "gradients": "git+ssh://git@github.com/skyglobal/gradients.git#v0.1.9",
     "polaris-global": "git+ssh://git@github.com/skyglobal/polaris-global.git#0.0.7"
   },
   "devDependencies": {

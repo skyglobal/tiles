@@ -4,3 +4,22 @@ $small-tile-content-vertical-spacing: 1.1vw;
 $medium-tile-content-vertical-spacing: 2vw;
 $tile-content-tablet-vertical-spacing: 2vw;
 $tile-content-mobile-vertical-spacing: 4vw;
+
+
+//gradients stuff
+$gradient-vertical: to top;
+$gradient-horizontal: to left;
+
+$polaris-bg-default: $gradient-vertical, (#FFFFFF, #E1E0E4, #FFFFFF);
+$polaris-bg-sky-atlantic: $gradient-vertical, (#005aaf, #003c7d);
+$polaris-bg-sky-living: $gradient-vertical, (#69a0b4, #69879b);
+$polaris-bg-sky-sports: $gradient-vertical, (#132774, #041456);
+$polaris-bg-sky-movies: $gradient-vertical, (#8F2679, #67135A);
+$polaris-bg-sky-arts: $gradient-vertical, (#fa5569, #fa0050);
+$polaris-bg-sky-news: $gradient-vertical, (#153073, #061B55);
+$polaris-bg-sky-1: $gradient-vertical, (#1ea0f5, #0082dc);
+$polaris-bg-sky-box-sets: $gradient-vertical, (#7F0C2D, #5B1139);
+$polaris-bg-sky-account: $gradient-vertical, (#197BC9, #135FA0);
+$polaris-bg-sky-store: $gradient-vertical, (#0E429E, #003366);
+$polaris-bg-sky-kids: $gradient-vertical, (#652D9F, #4B007E);
+$polaris-bg-default-dark: $gradient-vertical, (#FFFFFF, #B3B3B3);
