@@ -529,9 +529,9 @@
 
 .tile.type-channel .tile-bg {
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   left: 0; }
   .tile.type-channel .tile-bg > div {
     position: absolute;
@@ -846,9 +846,9 @@
 
 .tile.type-content .tile-bg {
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   left: 0; }
   .tile.type-content .tile-bg > div {
     position: absolute;
@@ -1271,9 +1271,9 @@
 
 .tile.theme-text-with-background .tile-bg {
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   left: 0; }
   .tile.theme-text-with-background .tile-bg > div {
     position: absolute;
