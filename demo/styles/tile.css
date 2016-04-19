@@ -539,7 +539,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-size: 100% 150%; }
+    background-size: 100%; }
 
 .tile.type-channel .tile-bg-active {
   -webkit-transition: opacity 0.6s ease;
