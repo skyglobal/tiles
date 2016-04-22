@@ -1,3 +1,4 @@
+@import '~polaris-global/globals/fonts';
 @import '~polaris-global/globals/colours';
 @import '~polaris-global/globals/responsive';
 
@@ -32,7 +33,7 @@
   }
 
   .tile-nina-button {
-    font-weight: bold;
+    @include font($skytext-med);
     margin: 10% auto 0;
     display: inline-block;
     padding: .5em 1em;
