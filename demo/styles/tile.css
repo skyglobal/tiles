@@ -828,7 +828,7 @@
     font-size: 4.6vw; }
   .tile.type-content[data-content=search] .tile-link .tile-bg,
   .watch-only-tiles > .tile-container > .tile.type-content .tile-link .tile-bg {
-    height: 88px;
+    height: 22vw;
     top: 0; } }
 
 /*
