@@ -1,6 +1,6 @@
 {
   "name": "tiles",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Initial styles for polaris tiles. Not intended for use long term",
   "repository": {
     "type": "git",
