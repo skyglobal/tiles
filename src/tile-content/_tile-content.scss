@@ -1,7 +1,6 @@
 @import '../globals/_gradients';
 @import '~polaris-global/globals/colours';
 @import '~polaris-global/globals/constants';
-@import '~polaris-global/globals/logos';
 @import '~polaris-global/globals/responsive';
 
 @import '../tile-sponsor/tile-sponsor';
@@ -24,100 +23,60 @@
   }
 
   &.sky-atlantic {
-    .tile-media-logo-channel {
-      @include logo-sky-atlantic;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-atlantic;
     }
   }
 
   &.sky-living {
-    .tile-media-logo-channel {
-      @include logo-sky-living;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-living;
     }
   }
 
   &.sky-sports {
-    .tile-media-logo-channel {
-      @include logo-sky-sports;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-sports;
     }
   }
 
   &.sky-movies {
-    .tile-media-logo-channel {
-      @include logo-sky-movies;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-movies;
     }
   }
 
   &.sky-arts {
-    .tile-media-logo-channel {
-      @include logo-sky-arts;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-arts;
     }
   }
 
   &.sky-news {
-    .tile-media-logo-channel {
-      @include logo-sky-news;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-news;
     }
   }
 
   &.sky-1 {
-    .tile-media-logo-channel {
-      @include logo-sky-1;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-1;
     }
   }
 
   &.sky-box-sets {
-    .tile-media-logo-channel {
-      @include logo-sky-box-sets;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-box-sets;
     }
   }
 
   &.sky-store {
-    .tile-media-logo-channel {
-      @include logo-sky-store;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-store;
     }
   }
 
   &.sky-kids {
-    .tile-media-logo-channel {
-      @include logo-sky-kids;
-    }
-
     .tile-bg-active {
       @extend .polaris-bg-sky-kids;
     }
