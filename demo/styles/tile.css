@@ -128,6 +128,9 @@
       -ms-transform: none;
       -o-transform: none;
       transform: none; }
+  @media (max-width: 640px) {
+    .tile-link {
+      height: 100%; } }
 
 .tile-media {
   position: relative;
