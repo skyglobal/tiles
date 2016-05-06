@@ -225,8 +225,12 @@
       .tile-media {
         float: right;
         width: 155px;
-        padding: 0;
         height: 100%;
+        padding: 0;
+      }
+
+      .tile-media-logo-channel {
+        left: 0.5vw;
       }
 
       .tile-content {

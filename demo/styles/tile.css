@@ -828,8 +828,11 @@
   .watch-only-tiles > .tile-container > .tile.type-content .tile-link .tile-media {
     float: right;
     width: 155px;
-    padding: 0;
-    height: 100%; }
+    height: 100%;
+    padding: 0; }
+  .tile.type-content[data-content=search] .tile-link .tile-media-logo-channel,
+  .watch-only-tiles > .tile-container > .tile.type-content .tile-link .tile-media-logo-channel {
+    left: 0.5vw; }
   .tile.type-content[data-content=search] .tile-link .tile-content,
   .watch-only-tiles > .tile-container > .tile.type-content .tile-link .tile-content {
     height: 88px;
