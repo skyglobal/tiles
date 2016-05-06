@@ -45,8 +45,7 @@
   line-height: 100vh;
   position: relative;
   width: 100%; }
-  .panel-inner:after,
-  .panel-inner:before {
+  .panel-inner:after, .panel-inner:before {
     content: '';
     height: 10px;
     left: 0;

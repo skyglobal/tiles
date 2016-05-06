@@ -1,0 +1,81 @@
+@import '~polaris-global/globals/colours';
+@import '~polaris-global/globals/fonts';
+@import '~polaris-global/globals/mixins';
+@import '~polaris-global/globals/responsive';
+
+@import '../globals/constants';
+
+@function desktop-font($multiplier) {
+  @return ($multiplier / $desktop) * 100vw;
+}
+
+.tile.theme-text-with-transparent-background {
+
+  .tile-media {
+    padding-bottom: 62.25%;
+  }
+
+  .tile-content {
+    padding-bottom: 37.75%;
+  }
+
+  .tile-content-inner {
+    text-align: center;
+  }
+
+  .tile-title {
+    line-height: 4vw;
+    padding: 0 3.3vw;
+  }
+
+  .tile-title,
+  .tile-link:hover .tile-title {
+    color: $dark-grey;
+  }
+
+  &.small,
+  &.medium {
+    .tile-content-inner {
+      bottom: 1.25vw;
+    }
+  }
+
+  &.medium {
+    .tile-title {
+      font-size: desktop-font(41);
+    }
+  }
+
+  .tile-bg {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+
+    > div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-size: 100%;
+    }
+   }
+
+  .tile-bg-default {
+    @extend .polaris-bg-default;
+  }
+
+  .tile-bg-active {
+    @include transition(opacity $med-transition ease);
+    opacity: 0;
+    @extend .polaris-bg-default-dark;
+  }
+
+  &:hover {
+    .tile-bg-active {
+      opacity: 1;
+    }
+  }
+}
