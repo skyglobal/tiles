@@ -835,7 +835,8 @@
     left: 0.5vw; }
   .tile.type-content[data-content=search] .tile-link .tile-content,
   .watch-only-tiles > .tile-container > .tile.type-content .tile-link .tile-content {
-    height: 88px;
+    height: 100%;
+    padding: 0;
     margin-right: 155px; }
   .tile.type-content[data-content=search] .tile-link .tile-title,
   .watch-only-tiles > .tile-container > .tile.type-content .tile-link .tile-title {
