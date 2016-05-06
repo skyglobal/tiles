@@ -128,9 +128,6 @@
       -ms-transform: none;
       -o-transform: none;
       transform: none; }
-  @media (max-width: 640px) {
-    .tile-link {
-      height: 100%; } }
 
 .tile-media {
   position: relative;
@@ -141,7 +138,6 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
   border: 0;
   -webkit-transition: transform 1s ease, margin 1s ease;
   -moz-transition: transform 1s ease, margin 1s ease;
@@ -218,6 +214,13 @@
     .tile.small .tile-details,
     .tile.medium .tile-details {
       font-size: 3.4375vw; } }
+
+@media (max-width: 640px) {
+  .tile[data-content=search] .tile-link {
+    height: 100%; } }
+
+.tile[data-content=search] .tile-media-bg {
+  height: 100%; }
 
 .polaris-bg-default, .tile.type-channel .tile-bg-default, .tile.type-content .tile-bg-default, .tile.theme-text-with-background .tile-bg-default {
   background-color: #E1E0E4;
