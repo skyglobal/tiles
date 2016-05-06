@@ -206,6 +206,11 @@
 .tile.type-content[data-content=search],
 .watch-only-tiles > .tile-container > .tile.type-content {
 
+  .content-tile-inner{
+    width: 100%;
+    height: 100%;
+  }
+
   .tile-inner {
 
     @include mobile {
@@ -220,6 +225,8 @@
       .tile-media {
         float: right;
         width: 155px;
+        padding: 0;
+        height: 100%;
       }
 
       .tile-content {
