@@ -440,14 +440,10 @@
 /*
 *  #responsive-mixins
 */
-.tile.type-channel:hover .tile-inner .tile-bg-active,
-.tile.type-channel:focus .tile-inner .tile-bg-active,
-.tile.type-channel.has-focus .tile-inner .tile-bg-active {
+.tile.type-channel:hover .tile-inner .tile-bg-active, .tile.type-channel:focus .tile-inner .tile-bg-active, .tile.type-channel.has-focus .tile-inner .tile-bg-active {
   opacity: 1; }
 
-.tile.type-channel:hover .tile-title,
-.tile.type-channel:focus .tile-title,
-.tile.type-channel.has-focus .tile-title {
+.tile.type-channel:hover .tile-title, .tile.type-channel:focus .tile-title, .tile.type-channel.has-focus .tile-title {
   color: white; }
 
 .tile.type-channel .tile-content {
@@ -697,19 +693,13 @@
   .tile-sponsor:hover .sponsor-label {
     text-decoration: underline; }
 
-.tile.type-content:hover .tile-inner .tile-bg-active,
-.tile.type-content:focus .tile-inner .tile-bg-active,
-.tile.type-content.has-focus .tile-inner .tile-bg-active {
+.tile.type-content:hover .tile-inner .tile-bg-active, .tile.type-content:focus .tile-inner .tile-bg-active, .tile.type-content.has-focus .tile-inner .tile-bg-active {
   opacity: 1; }
 
-.tile.type-content:hover .tile-title,
-.tile.type-content:focus .tile-title,
-.tile.type-content.has-focus .tile-title {
+.tile.type-content:hover .tile-title, .tile.type-content:focus .tile-title, .tile.type-content.has-focus .tile-title {
   color: white; }
 
-.tile.type-content:hover .tile-sponsor span,
-.tile.type-content:focus .tile-sponsor span,
-.tile.type-content.has-focus .tile-sponsor span {
+.tile.type-content:hover .tile-sponsor span, .tile.type-content:focus .tile-sponsor span, .tile.type-content.has-focus .tile-sponsor span {
   color: white; }
 
 .tile.type-content .tile-bg {
@@ -727,14 +717,12 @@
     background-size: 100%; }
 
 @media (min-width: 641px) and (max-width: 1024px) {
-  .tile.type-content.small .tile-media-logo-channel,
-  .tile.type-content.medium .tile-media-logo-channel {
+  .tile.type-content.small .tile-media-logo-channel, .tile.type-content.medium .tile-media-logo-channel {
     left: 1.5vw;
     bottom: 1.5vw; } }
 
 @media (max-width: 640px) {
-  .tile.type-content.small .tile-media-logo-channel,
-  .tile.type-content.medium .tile-media-logo-channel {
+  .tile.type-content.small .tile-media-logo-channel, .tile.type-content.medium .tile-media-logo-channel {
     bottom: 3vw;
     left: 3vw; } }
 
@@ -756,8 +744,7 @@
   left: 1.5vw;
   position: absolute;
   width: 200px; }
-  .tile.type-content .tile-media-logo-channel[src*=sky-box-sets],
-  .tile.type-content .tile-media-logo-channel[src*=Sky-Store] {
+  .tile.type-content .tile-media-logo-channel[src*=sky-box-sets], .tile.type-content .tile-media-logo-channel[src*=Sky-Store] {
     height: 12.5%;
     max-height: 30px;
     min-height: 25px; }
@@ -879,7 +866,7 @@
     height: 22vw; } }
 
 .tile.type-text[data-content=search] .tile-text .tile-title {
-  color: #666; }
+  color: #4a4a4a; }
   @media (max-width: 640px) {
     .tile.type-text[data-content=search] .tile-text .tile-title {
       font-size: 1.1rem; } }
@@ -888,7 +875,7 @@
       font-size: 1.8rem; } }
 
 .tile.type-text[data-content=search] .tile-text .tile-details {
-  color: #666; }
+  color: #4a4a4a; }
   @media (max-width: 640px) {
     .tile.type-text[data-content=search] .tile-text .tile-details {
       overflow: hidden;
@@ -914,8 +901,7 @@
 .tile.type-link .tile-media {
   padding-bottom: 100%; }
 
-.tile.type-link.small .tile-content-inner,
-.tile.type-link.medium .tile-content-inner {
+.tile.type-link.small .tile-content-inner, .tile.type-link.medium .tile-content-inner {
   bottom: auto; }
 
 .tile.type-link.theme-light .tile-title {
@@ -924,27 +910,22 @@
 .tile.type-link.theme-dark .tile-title {
   color: white; }
 
-.tile.type-link.theme-light .tile-content-inner,
-.tile.type-link.theme-dark .tile-content-inner {
+.tile.type-link.theme-light .tile-content-inner, .tile.type-link.theme-dark .tile-content-inner {
   bottom: 0; }
 
-.tile.type-link.theme-light.small .tile-content-inner,
-.tile.type-link.theme-dark.small .tile-content-inner {
+.tile.type-link.theme-light.small .tile-content-inner, .tile.type-link.theme-dark.small .tile-content-inner {
   top: 1vw; }
 
-.tile.type-link.theme-light.medium .tile-content-inner,
-.tile.type-link.theme-dark.medium .tile-content-inner {
+.tile.type-link.theme-light.medium .tile-content-inner, .tile.type-link.theme-dark.medium .tile-content-inner {
   top: 1.25vw; }
 
-.tile.type-link.theme-light .tile-content,
-.tile.type-link.theme-dark .tile-content {
+.tile.type-link.theme-light .tile-content, .tile.type-link.theme-dark .tile-content {
   position: absolute;
   width: 100%;
   bottom: 0;
   padding-bottom: 43.75%; }
 
-.tile.type-link.theme-light .tile-title,
-.tile.type-link.theme-dark .tile-title {
+.tile.type-link.theme-light .tile-title, .tile.type-link.theme-dark .tile-title {
   position: absolute;
   top: 50%;
   transform: translateY(-50%); }
@@ -991,7 +972,7 @@
   font-weight: normal;
   margin: 10% auto 0;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: .5em 1em;
   border: 2px solid #0073c5;
   border-radius: 4px;
   color: #0073c5;
@@ -1144,8 +1125,7 @@
   bottom: 2vw;
   left: 1.5vw; }
 
-.tile.theme-text-with-background.small .tile-legal,
-.tile.theme-text-with-background.medium .tile-legal {
+.tile.theme-text-with-background.small .tile-legal, .tile.theme-text-with-background.medium .tile-legal {
   position: absolute;
   color: #222222;
   font-size: 13px;
@@ -1153,11 +1133,9 @@
   font-family: SkyTextRegular, Helvetica, Arial, Sans-Serif;
   font-weight: normal; }
   @media (min-width: 641px) and (max-width: 1024px) {
-    .tile.theme-text-with-background.small .tile-legal,
-    .tile.theme-text-with-background.medium .tile-legal {
+    .tile.theme-text-with-background.small .tile-legal, .tile.theme-text-with-background.medium .tile-legal {
       bottom: 2vw; } }
   @media (max-width: 640px) {
-    .tile.theme-text-with-background.small .tile-legal,
-    .tile.theme-text-with-background.medium .tile-legal {
+    .tile.theme-text-with-background.small .tile-legal, .tile.theme-text-with-background.medium .tile-legal {
       left: 3vw;
       bottom: 4vw; } }
