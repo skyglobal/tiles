@@ -83,7 +83,7 @@ $grey: #e1e0e4;
     }
 
     .tile-title {
-      color: $mid-grey;
+      color: #4a4a4a;
 
       @include mobile {
         font-size: 1.1rem;
@@ -95,7 +95,7 @@ $grey: #e1e0e4;
     }
 
     .tile-details {
-      color: $mid-grey;
+      color: #4a4a4a;
 
       @include mobile {
         overflow: hidden;
