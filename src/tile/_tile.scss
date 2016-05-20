@@ -66,7 +66,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  border: 0px;
+  border: 0;
   @include transition(transform $long-transition ease, margin $long-transition ease);
 }
 
@@ -163,5 +163,18 @@
     @include mobile {
       font-size: 22 / $mobile * 100vw;
     }
+  }
+}
+
+.tile[data-content=search]{
+
+  .tile-link {
+    @include mobile {
+      height: 100%;
+    }
+  }
+
+  .tile-media-bg {
+    height: 100%;
   }
 }
