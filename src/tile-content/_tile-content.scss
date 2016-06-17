@@ -46,6 +46,12 @@
     }
   }
 
+  &.sky-cinema {
+    .tile-bg-active {
+      @extend .polaris-bg-sky-cinema;
+    }
+  }
+
   &.sky-arts {
     .tile-bg-active {
       @extend .polaris-bg-sky-arts;
