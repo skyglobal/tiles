@@ -68,6 +68,12 @@
     }
   }
 
+  .sky-cinema-channel-promo {
+    .tile-bg-active {
+      @extend .polaris-bg-sky-cinema;
+    }
+  }
+
   .sky-news-channel-promo {
     .tile-bg-active {
       @extend .polaris-bg-sky-news;
