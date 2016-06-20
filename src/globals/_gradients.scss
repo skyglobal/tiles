@@ -27,6 +27,10 @@
   @include page-background-gradient($polaris-bg-sky-movies);
 }
 
+.polaris-bg-sky-cinema {
+  @include page-background-gradient($polaris-bg-sky-cinema);
+}
+
 .polaris-bg-sky-arts {
   @include page-background-gradient($polaris-bg-sky-arts);
 }
