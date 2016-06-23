@@ -74,7 +74,6 @@
       color: $dark-grey;
       font-size: 13px;
       line-height: 1em;
-      @include font($skytext-reg);
 
       @include tablet {
         bottom: $tile-content-tablet-vertical-spacing;

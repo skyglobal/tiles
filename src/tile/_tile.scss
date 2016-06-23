@@ -113,7 +113,6 @@
   margin: 0;
   line-height: 1em;
   color: $white;
-  @include font($skytext-reg);
 
   .tile:hover & {
     text-decoration: underline;
@@ -144,7 +143,6 @@
   margin: 0;
   line-height: 1em;
   color: $white;
-  @include font($skytext-reg);
 
   .tile.small & {
     font-size: 20 / $desktop * 100vw;
