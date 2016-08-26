@@ -51,7 +51,7 @@
       font-size: desktop-font(36);
       line-height: 1.2em;
       color: $white;
-      padding-top: 1em;
+      padding-top: 0.5em;
 
       @include tablet {
         font-size: desktop-font(56);
