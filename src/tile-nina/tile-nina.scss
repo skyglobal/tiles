@@ -1,4 +1,5 @@
 @import '~polaris-global/globals/fonts';
+@import '../globals/_gradients';
 @import '~polaris-global/globals/colours';
 @import '~polaris-global/globals/responsive';
 
@@ -11,21 +12,10 @@
     top: 0;
   }
 
-  .tile-media {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-bottom: 0;
-
-    img {
-      width: 100%;
-    }
-  }
-
   .tile-content {
-    margin-top: 49.25%;
-    margin-bottom: 7%;
+    padding-bottom: 99.99%;
+    @extend .polaris-bg-sky-1;
+    color: color(white);
   }
 
   .tile-content-inner {
@@ -33,33 +23,58 @@
   }
 
   .tile-nina-button {
-    @include font($skytext-med);
-    margin: 10% auto 0;
+    font-weight: bold;
+    margin: 2.5% auto 0;
     display: inline-block;
-    padding: .5em 1em;
-    border: 2px solid $sky-blue;
+    padding: .3em 1.3em;
+    border: 1px solid color(white);
     border-radius: 4px;
-    color: $sky-blue;
-    font-size: 20px;
+    color: color(white);
+    font-size: desktop-font(20);
+
+    @include tablet {
+      font-size: desktop-font(40);
+    }
+
+    @include mobile {
+      font-size: desktop-font(84);
+    }
   }
 
   &:hover .tile-nina-button {
-    color: $white;
-    background-color: $sky-blue;
+    background-color: color(white);
+    color: $sky-blue;
   }
 
   &.small {
-    .tile-title,
-    .tile-details {
-      font-size: desktop-font(26);
+    .tile-title {
+      font-size: desktop-font(36);
       line-height: 1.2em;
+      color: color(white);
+      padding-top: 0.5em;
 
       @include tablet {
-        font-size: desktop-font(50);
+        font-size: desktop-font(56);
       }
 
       @include mobile {
-        font-size: desktop-font(114);
+        font-size: desktop-font(124);
+      }
+    }
+
+    .tile-subtitle {
+      padding-top: 1.2em;
+      font-size: desktop-font(20);
+      line-height: 1.5em;
+      color: color(white);
+      margin-bottom: 0.8em;
+
+      @include tablet {
+        font-size: desktop-font(38);
+      }
+
+      @include mobile {
+        font-size: desktop-font(84);
       }
     }
   }
