@@ -90,10 +90,7 @@
 
   &.watch {
     .tile-bg-active {
-      &.tile-title {
-       color: $black;
-      }
-      @extend .polaris-bg-default;
+      @extend .polaris-bg-default-dark;
     }
   }
 
