@@ -88,6 +88,15 @@
     }
   }
 
+  &.watch {
+    .tile-bg-active {
+      &.tile-title {
+       color: $black;
+      }
+      @extend .polaris-bg-default;
+    }
+  }
+
   .tile-bg {
     position: absolute;
     top: 55%;
