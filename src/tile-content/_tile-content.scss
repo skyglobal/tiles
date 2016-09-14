@@ -20,6 +20,11 @@
     .tile-sponsor span {
       color: $white;
     }
+
+    &.watch {
+      .tile-title {
+        color: $black;
+    }
   }
 
   &.sky-atlantic {
