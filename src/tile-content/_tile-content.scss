@@ -20,6 +20,12 @@
     .tile-sponsor span {
       color: $white;
     }
+
+    &.watch {
+      .tile-title {
+        color: $black;
+      }
+    }
   }
 
   &.sky-atlantic {
@@ -85,6 +91,12 @@
   &.sky-kids {
     .tile-bg-active {
       @extend .polaris-bg-sky-kids;
+    }
+  }
+
+  &.watch {
+    .tile-bg-active {
+      @extend .polaris-bg-default-dark;
     }
   }
 
